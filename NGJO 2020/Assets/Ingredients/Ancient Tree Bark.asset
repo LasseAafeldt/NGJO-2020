@@ -10,8 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6372e42df573d9f4283fcd8743fcec77, type: 3}
-  m_Name: Vial of unicorn tears
+  m_Name: Ancient Tree Bark
   m_EditorClassIdentifier: 
-  _name: Vial of Unicorn Tears
-  description: Increadbly large vial containing a tiny amount of color changing liqud
-  sprite: {fileID: -7994837025194578526, guid: a530f1ad72f301d4dac901221660029d, type: 3}
+  _name: Ancient Tree Bark
+  description: So old that it crumbles merly by you looking at it. be careful not
+    to look too long or you might loose it.
+  sprite: {fileID: -4897620230045987977, guid: a530f1ad72f301d4dac901221660029d, type: 3}

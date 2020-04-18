@@ -10,14 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7c45067742c34ab429edeb1e75413b2e, type: 3}
-  m_Name: Charisma potion
+  m_Name: Dexterity Potion
   m_EditorClassIdentifier: 
-  _name: Charisma potion
-  description: Boosts your confidence and makes you talk fancy.
-  sprite: {fileID: 5468936552663581425, guid: a530f1ad72f301d4dac901221660029d, type: 3}
+  _name: Dexterity Potion
+  description: 
+  sprite: {fileID: -8555730859327861025, guid: a530f1ad72f301d4dac901221660029d, type: 3}
   ingredients:
+  - {fileID: 11400000, guid: 70ad72c5525d8f1498bc230ea9c5559e, type: 2}
   - {fileID: 11400000, guid: d4aa03b3c259fff4da5805c2ae747184, type: 2}
-  - {fileID: 11400000, guid: fd041c96e28e98f438bfd4192b2aae5e, type: 2}
-  - {fileID: 11400000, guid: 5532a2bea766b324d93f6d21ce4f5140, type: 2}
+  - {fileID: 11400000, guid: a0cd930c0ad53f04e970a099b06d121a, type: 2}
   amountOfIngredients: 010000000100000001000000
   amountOfPotion: 0
