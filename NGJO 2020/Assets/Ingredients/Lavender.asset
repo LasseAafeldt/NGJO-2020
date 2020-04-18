@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _name: Lavender
   description: some form of plant i believe.
-  sprite: {fileID: 0}
+  sprite: {fileID: 6589258517179773673, guid: a530f1ad72f301d4dac901221660029d, type: 3}

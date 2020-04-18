@@ -15,4 +15,4 @@ MonoBehaviour:
   _name: Bat Wing
   description: Leathery to the feel, kinda stiff. Flaps when you takes your eyes
     off it.
-  sprite: {fileID: 0}
+  sprite: {fileID: 368402758797929580, guid: a530f1ad72f301d4dac901221660029d, type: 3}
