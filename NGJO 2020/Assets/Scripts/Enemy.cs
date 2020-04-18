@@ -36,7 +36,7 @@ public class Enemy : MonoBehaviour {
 		}
 	}
 	IEnumerator Wait(float delay) {
-		if (delay > 0) {
+		if (delay > 0 && moving) {
 			moving = false;
 			yield return new WaitForSeconds(delay);
 			moving = true;
@@ -44,10 +44,9 @@ public class Enemy : MonoBehaviour {
 	}
 
 	private void OnTriggerEnter2D(Collider2D collision) {
-		// TODO: replace with the actual player script and uncomment
-		/*if (collision.GetComponent<Player>) {
-			collision.GetComponent<Player>().Respawn();
-		}*/
+		if (collision.GetComponent<PlayerMovement>()) {
+			collision.GetComponent<PlayerMovement>().Respawn();
+		}
 	}
 
 	private void OnDrawGizmos() {
