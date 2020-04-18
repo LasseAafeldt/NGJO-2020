@@ -1161,51 +1161,6 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 6693978854768799966, guid: 8a208205606754f4b86a13013bb18d08,
-        type: 3}
-      propertyPath: killCamPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6693978854768799966, guid: 8a208205606754f4b86a13013bb18d08,
-        type: 3}
-      propertyPath: killCamPosition.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 6693978854768799966, guid: 8a208205606754f4b86a13013bb18d08,
-        type: 3}
-      propertyPath: killCamRotation.z
-      value: 26
-      objectReference: {fileID: 0}
-    - target: {fileID: 6693978854768799966, guid: 8a208205606754f4b86a13013bb18d08,
-        type: 3}
-      propertyPath: killCamPosition.z
-      value: -10
-      objectReference: {fileID: 0}
-    - target: {fileID: 6693978854768799966, guid: 8a208205606754f4b86a13013bb18d08,
-        type: 3}
-      propertyPath: killCamMaxMove
-      value: 9.3
-      objectReference: {fileID: 0}
-    - target: {fileID: 6693978854768799966, guid: 8a208205606754f4b86a13013bb18d08,
-        type: 3}
-      propertyPath: killCamDepth
-      value: 1.3
-      objectReference: {fileID: 0}
-    - target: {fileID: 6693978854768799966, guid: 8a208205606754f4b86a13013bb18d08,
-        type: 3}
-      propertyPath: killCamMaxRotate
-      value: 37
-      objectReference: {fileID: 0}
-    - target: {fileID: 6693978854768799966, guid: 8a208205606754f4b86a13013bb18d08,
-        type: 3}
-      propertyPath: killCamDuration
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 6693978854768799966, guid: 8a208205606754f4b86a13013bb18d08,
-        type: 3}
-      propertyPath: killCamDepthSpeed
-      value: 8
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8a208205606754f4b86a13013bb18d08, type: 3}
 --- !u!1 &571870406
