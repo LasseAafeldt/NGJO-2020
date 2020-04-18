@@ -1063,7 +1063,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 600
+        y: 720
         width: 120
         height: 120
       alignment: 7
@@ -1084,7 +1084,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 120
-        y: 600
+        y: 720
         width: 120
         height: 120
       alignment: 7
@@ -1105,7 +1105,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 240
-        y: 600
+        y: 720
         width: 120
         height: 120
       alignment: 7
@@ -1126,7 +1126,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 360
-        y: 600
+        y: 720
         width: 120
         height: 120
       alignment: 7
@@ -1147,7 +1147,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 480
+        y: 600
         width: 120
         height: 120
       alignment: 7
@@ -1168,7 +1168,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 120
-        y: 480
+        y: 600
         width: 120
         height: 120
       alignment: 7
@@ -1189,7 +1189,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 240
-        y: 480
+        y: 600
         width: 120
         height: 120
       alignment: 7
@@ -1210,7 +1210,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 360
-        y: 480
+        y: 600
         width: 120
         height: 120
       alignment: 7
@@ -1231,7 +1231,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 360
+        y: 480
         width: 120
         height: 120
       alignment: 7
@@ -1252,7 +1252,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 120
-        y: 360
+        y: 480
         width: 120
         height: 120
       alignment: 7
@@ -1273,7 +1273,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 240
-        y: 360
+        y: 480
         width: 120
         height: 120
       alignment: 7
@@ -1294,7 +1294,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 360
-        y: 360
+        y: 480
         width: 120
         height: 120
       alignment: 7
@@ -1315,7 +1315,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 240
+        y: 360
         width: 120
         height: 120
       alignment: 7
@@ -1336,7 +1336,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 120
-        y: 240
+        y: 360
         width: 120
         height: 120
       alignment: 7
@@ -1357,7 +1357,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 240
-        y: 240
+        y: 360
         width: 120
         height: 120
       alignment: 7
@@ -1378,7 +1378,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 360
-        y: 240
+        y: 360
         width: 120
         height: 120
       alignment: 7
@@ -1399,7 +1399,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 120
+        y: 240
         width: 120
         height: 120
       alignment: 7
@@ -1420,7 +1420,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 120
-        y: 120
+        y: 240
         width: 120
         height: 120
       alignment: 7
@@ -1441,7 +1441,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 240
-        y: 120
+        y: 240
         width: 120
         height: 120
       alignment: 7
@@ -1462,7 +1462,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 360
-        y: 120
+        y: 240
         width: 120
         height: 120
       alignment: 7
@@ -1483,7 +1483,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
+        y: 120
         width: 120
         height: 120
       alignment: 7
@@ -1504,7 +1504,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 120
-        y: 0
+        y: 120
         width: 120
         height: 120
       alignment: 7
@@ -1525,7 +1525,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 240
-        y: 0
+        y: 120
         width: 120
         height: 120
       alignment: 7
@@ -1546,7 +1546,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 360
-        y: 0
+        y: 120
         width: 120
         height: 120
       alignment: 7
@@ -1558,6 +1558,27 @@ TextureImporter:
       bones: []
       spriteID: ebe93bbbe7f4f8340800000000000000
       internalID: 4868197127944380094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerAlchemist-Sheet_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 120
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 639bbea02c2d5b920800000000000000
+      internalID: 3005540057188383030
       vertices: []
       indices: 
       edges: []
