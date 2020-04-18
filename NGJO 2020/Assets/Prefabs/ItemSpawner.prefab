@@ -288,8 +288,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   NumItemsToSpawn: 2
-  itemToSpawn: {fileID: 5776132333321059380, guid: 165bbdf0711425740a11e9b96907f720,
-    type: 3}
+  itemsToSpawn:
+  - {fileID: 5776132333321059380, guid: 165bbdf0711425740a11e9b96907f720, type: 3}
+  - {fileID: 5776132333321059380, guid: 623d0be495f65ce4685cd522544ed112, type: 3}
+  - {fileID: 5776132333321059380, guid: 0666600ea99cee540b3505da7dec521f, type: 3}
+  - {fileID: 5776132333321059380, guid: 6239ba8d35b50184593de4409194ed4c, type: 3}
+  - {fileID: 5776132333321059380, guid: f6594adda6ef0e2489596049f1181e45, type: 3}
+  - {fileID: 5776132333321059380, guid: 03d2db47b9d051447a9429c0f5be5c48, type: 3}
+  - {fileID: 5776132333321059380, guid: 60320f0332bba094d892c0a3fdbb0d6a, type: 3}
+  - {fileID: 5776132333321059380, guid: 7d6ac864766650849a95f355358d40b3, type: 3}
   availableSpawnPoints: []
 --- !u!1 &2546692559260090807
 GameObject:
