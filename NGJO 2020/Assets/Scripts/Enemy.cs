@@ -13,6 +13,11 @@ public class Enemy : MonoBehaviour {
 	bool moving = true;
 	int currentTarget = 1;
 	int nextTarget = 1;
+
+	void Start() {
+		transform.position = targets[0];
+	}
+
 	void Update() {
 		if (moving) {
 			transform.position = Vector2.MoveTowards(transform.position, targets[currentTarget], speed * Time.deltaTime);
@@ -54,6 +59,9 @@ public class Enemy : MonoBehaviour {
 		if (targets != null && targets.Length >= 2) {
 			for (var i = 0; i < targets.Length - 1; i++)
 				Gizmos.DrawLine(targets[i], targets[i + 1]);
+			if (loop) {
+				Gizmos.DrawLine(targets[0], targets[targets.Length - 1]);
+			}
 		}
 	}
 }

@@ -66,7 +66,7 @@ MonoBehaviour:
   - {x: 3, y: 0}
   - {x: 3, y: 2}
   loop: 1
-  speed: 2
+  speed: 3
   stepDelay: 0
   terminalDelay: 1
 --- !u!212 &6894475833235978572
