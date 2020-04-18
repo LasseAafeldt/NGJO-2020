@@ -149,7 +149,7 @@ PrefabInstance:
     - target: {fileID: 996646367859099520, guid: b0d867f8225f154498589e2d141e7105,
         type: 3}
       propertyPath: m_Name
-      value: Vial of unicorn tears
+      value: Vial of Unicorn Tears
       objectReference: {fileID: 0}
     - target: {fileID: 996646367859099520, guid: b0d867f8225f154498589e2d141e7105,
         type: 3}
@@ -295,6 +295,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7621695071108166741, guid: b0d867f8225f154498589e2d141e7105,
+        type: 3}
+      propertyPath: m_firstOverflowCharacterIndex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7621695071108166741, guid: b0d867f8225f154498589e2d141e7105,
+        type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8100730948701788750, guid: b0d867f8225f154498589e2d141e7105,
         type: 3}
@@ -510,11 +520,16 @@ PrefabInstance:
     - target: {fileID: 7621695071108166741, guid: b0d867f8225f154498589e2d141e7105,
         type: 3}
       propertyPath: m_textInfo.lineCount
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7621695071108166741, guid: b0d867f8225f154498589e2d141e7105,
         type: 3}
       propertyPath: m_textInfo.pageCount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7621695071108166741, guid: b0d867f8225f154498589e2d141e7105,
+        type: 3}
+      propertyPath: m_firstOverflowCharacterIndex
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8100730948701788750, guid: b0d867f8225f154498589e2d141e7105,
@@ -731,11 +746,16 @@ PrefabInstance:
     - target: {fileID: 7621695071108166741, guid: b0d867f8225f154498589e2d141e7105,
         type: 3}
       propertyPath: m_textInfo.lineCount
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7621695071108166741, guid: b0d867f8225f154498589e2d141e7105,
         type: 3}
       propertyPath: m_textInfo.pageCount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7621695071108166741, guid: b0d867f8225f154498589e2d141e7105,
+        type: 3}
+      propertyPath: m_firstOverflowCharacterIndex
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8100730948701788750, guid: b0d867f8225f154498589e2d141e7105,
@@ -952,11 +972,16 @@ PrefabInstance:
     - target: {fileID: 7621695071108166741, guid: b0d867f8225f154498589e2d141e7105,
         type: 3}
       propertyPath: m_textInfo.lineCount
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7621695071108166741, guid: b0d867f8225f154498589e2d141e7105,
         type: 3}
       propertyPath: m_textInfo.pageCount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7621695071108166741, guid: b0d867f8225f154498589e2d141e7105,
+        type: 3}
+      propertyPath: m_firstOverflowCharacterIndex
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8100730948701788750, guid: b0d867f8225f154498589e2d141e7105,
@@ -1173,11 +1198,16 @@ PrefabInstance:
     - target: {fileID: 7621695071108166741, guid: b0d867f8225f154498589e2d141e7105,
         type: 3}
       propertyPath: m_textInfo.lineCount
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7621695071108166741, guid: b0d867f8225f154498589e2d141e7105,
         type: 3}
       propertyPath: m_textInfo.pageCount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7621695071108166741, guid: b0d867f8225f154498589e2d141e7105,
+        type: 3}
+      propertyPath: m_firstOverflowCharacterIndex
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8100730948701788750, guid: b0d867f8225f154498589e2d141e7105,
@@ -1394,11 +1424,16 @@ PrefabInstance:
     - target: {fileID: 7621695071108166741, guid: b0d867f8225f154498589e2d141e7105,
         type: 3}
       propertyPath: m_textInfo.lineCount
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7621695071108166741, guid: b0d867f8225f154498589e2d141e7105,
         type: 3}
       propertyPath: m_textInfo.pageCount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7621695071108166741, guid: b0d867f8225f154498589e2d141e7105,
+        type: 3}
+      propertyPath: m_firstOverflowCharacterIndex
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8100730948701788750, guid: b0d867f8225f154498589e2d141e7105,
@@ -1615,11 +1650,16 @@ PrefabInstance:
     - target: {fileID: 7621695071108166741, guid: b0d867f8225f154498589e2d141e7105,
         type: 3}
       propertyPath: m_textInfo.lineCount
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7621695071108166741, guid: b0d867f8225f154498589e2d141e7105,
         type: 3}
       propertyPath: m_textInfo.pageCount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7621695071108166741, guid: b0d867f8225f154498589e2d141e7105,
+        type: 3}
+      propertyPath: m_firstOverflowCharacterIndex
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8100730948701788750, guid: b0d867f8225f154498589e2d141e7105,
@@ -1836,11 +1876,16 @@ PrefabInstance:
     - target: {fileID: 7621695071108166741, guid: b0d867f8225f154498589e2d141e7105,
         type: 3}
       propertyPath: m_textInfo.lineCount
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7621695071108166741, guid: b0d867f8225f154498589e2d141e7105,
         type: 3}
       propertyPath: m_textInfo.pageCount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7621695071108166741, guid: b0d867f8225f154498589e2d141e7105,
+        type: 3}
+      propertyPath: m_firstOverflowCharacterIndex
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8100730948701788750, guid: b0d867f8225f154498589e2d141e7105,
