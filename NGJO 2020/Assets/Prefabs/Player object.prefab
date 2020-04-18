@@ -100,7 +100,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 2.5
   rb: {fileID: 6693978854768799937}
-  facingRight: 1
+  killCamPosition: {x: 0, y: 0.5, z: -10}
+  killCamMaxMove: 9.3
+  killCamDepth: 1.3
+  killCamDepthSpeed: 8
+  killCamRotation: {x: 0, y: 0, z: 26}
+  killCamMaxRotate: 37
+  killCamDuration: 3
 --- !u!50 &6693978854768799937
 Rigidbody2D:
   serializedVersion: 4
