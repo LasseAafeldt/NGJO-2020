@@ -1,0 +1,995 @@
+fileFormatVersion: 2
+guid: 389e87bf13d62694093e84e37c4a3ccc
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1496980233443060094
+    second: alchemistSlime-Sheet_0
+  - first:
+      213: -3583765837562672403
+    second: alchemistSlime-Sheet_1
+  - first:
+      213: -2525096528351001632
+    second: alchemistSlime-Sheet_2
+  - first:
+      213: -4660935448799433611
+    second: alchemistSlime-Sheet_3
+  - first:
+      213: 5346601291865030787
+    second: alchemistSlime-Sheet_4
+  - first:
+      213: 6838904183662935944
+    second: alchemistSlime-Sheet_5
+  - first:
+      213: -1681363102160673173
+    second: alchemistSlime-Sheet_6
+  - first:
+      213: 2573656484583782529
+    second: alchemistSlime-Sheet_7
+  - first:
+      213: -5888956550353787280
+    second: alchemistSlime-Sheet_8
+  - first:
+      213: -4537903146840464008
+    second: alchemistSlime-Sheet_9
+  - first:
+      213: 4814362913699450142
+    second: alchemistSlime-Sheet_10
+  - first:
+      213: 7590049826551895092
+    second: alchemistSlime-Sheet_11
+  - first:
+      213: -7982600611924406181
+    second: alchemistSlime-Sheet_12
+  - first:
+      213: -3084227264464995370
+    second: alchemistSlime-Sheet_13
+  - first:
+      213: 3211373560837089101
+    second: alchemistSlime-Sheet_14
+  - first:
+      213: 4783000094266715122
+    second: alchemistSlime-Sheet_15
+  - first:
+      213: -5993367519433161387
+    second: alchemistSlime-Sheet_16
+  - first:
+      213: -3674453617550148501
+    second: alchemistSlime-Sheet_17
+  - first:
+      213: 687494058618490885
+    second: alchemistSlime-Sheet_18
+  - first:
+      213: 4273647908311024015
+    second: alchemistSlime-Sheet_19
+  - first:
+      213: 8471410079001156582
+    second: alchemistSlime-Sheet_20
+  - first:
+      213: 5987713813068919456
+    second: alchemistSlime-Sheet_21
+  - first:
+      213: 6854699957237548442
+    second: alchemistSlime-Sheet_22
+  - first:
+      213: 6571284469868225571
+    second: alchemistSlime-Sheet_23
+  - first:
+      213: -6571867095419175015
+    second: alchemistSlime-Sheet_24
+  - first:
+      213: -5762216467897166114
+    second: alchemistSlime-Sheet_25
+  - first:
+      213: 8383079378417875821
+    second: alchemistSlime-Sheet_26
+  - first:
+      213: -1240289876654994198
+    second: alchemistSlime-Sheet_27
+  - first:
+      213: -3822579892081988550
+    second: alchemistSlime-Sheet_28
+  - first:
+      213: 3479412770975144553
+    second: alchemistSlime-Sheet_29
+  - first:
+      213: 2646604847138888614
+    second: alchemistSlime-Sheet_30
+  - first:
+      213: -6617791339308944937
+    second: alchemistSlime-Sheet_31
+  - first:
+      213: 8375818643836146108
+    second: alchemistSlime-Sheet_32
+  - first:
+      213: -4640492269625627039
+    second: alchemistSlime-Sheet_0
+  - first:
+      213: 6021432130481319835
+    second: alchemistSlime-Sheet_1
+  - first:
+      213: -9007023368291475575
+    second: alchemistSlime-Sheet_2
+  - first:
+      213: 2458230627208851005
+    second: alchemistSlime-Sheet_3
+  - first:
+      213: 4867273346072021813
+    second: alchemistSlime-Sheet_4
+  - first:
+      213: -3214531921579020404
+    second: alchemistSlime-Sheet_5
+  - first:
+      213: 547879321196192443
+    second: alchemistSlime-Sheet_6
+  - first:
+      213: 6581659956436364549
+    second: alchemistSlime-Sheet_7
+  - first:
+      213: -6304275306440786861
+    second: alchemistSlime-Sheet_8
+  - first:
+      213: 4352038542781494631
+    second: alchemistSlime-Sheet_9
+  - first:
+      213: 5080576651280122818
+    second: alchemistSlime-Sheet_10
+  - first:
+      213: 1705504655093979347
+    second: alchemistSlime-Sheet_11
+  - first:
+      213: 6580347122245909083
+    second: alchemistSlime-Sheet_12
+  - first:
+      213: 590749705898840192
+    second: alchemistSlime-Sheet_13
+  - first:
+      213: 759329797477437495
+    second: alchemistSlime-Sheet_14
+  - first:
+      213: -971045204114941598
+    second: alchemistSlime-Sheet_15
+  - first:
+      213: 6860028190855381075
+    second: alchemistSlime-Sheet_16
+  - first:
+      213: 6434578867254965697
+    second: alchemistSlime-Sheet_17
+  - first:
+      213: -1552240227743181266
+    second: alchemistSlime-Sheet_18
+  - first:
+      213: -5366730885167605729
+    second: alchemistSlime-Sheet_19
+  - first:
+      213: -1079421212114643104
+    second: alchemistSlime-Sheet_20
+  - first:
+      213: -1146915156227047696
+    second: alchemistSlime-Sheet_21
+  - first:
+      213: -5658416683657184836
+    second: alchemistSlime-Sheet_22
+  - first:
+      213: -6253311886239712705
+    second: alchemistSlime-Sheet_23
+  - first:
+      213: -7653345311022807757
+    second: alchemistSlime-Sheet_24
+  - first:
+      213: -5125722313040948241
+    second: alchemistSlime-Sheet_25
+  - first:
+      213: -4414603325222468458
+    second: alchemistSlime-Sheet_26
+  - first:
+      213: -6276295183330486147
+    second: alchemistSlime-Sheet_27
+  - first:
+      213: -3240099633024843725
+    second: alchemistSlime-Sheet_28
+  - first:
+      213: 8622979257646092044
+    second: alchemistSlime-Sheet_29
+  - first:
+      213: -6289093442480198889
+    second: alchemistSlime-Sheet_30
+  - first:
+      213: -6954294326300188387
+    second: alchemistSlime-Sheet_31
+  - first:
+      213: -4580428254115429922
+    second: alchemistSlime-Sheet_32
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 250
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: alchemistSlime-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 240
+        width: 120
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16ea40efdd8a99fb0800000000000000
+      internalID: -4640492269625627039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alchemistSlime-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 240
+        width: 120
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9f6678ae9c609350800000000000000
+      internalID: 6021432130481319835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alchemistSlime-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 240
+        width: 120
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98f1851c7ff900380800000000000000
+      internalID: -9007023368291475575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alchemistSlime-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 240
+        width: 120
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3ee4ce2bb36d1220800000000000000
+      internalID: 2458230627208851005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alchemistSlime-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 240
+        width: 120
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53b895102570c8340800000000000000
+      internalID: 4867273346072021813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alchemistSlime-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 240
+        width: 120
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8fe027af30b363d0800000000000000
+      internalID: -3214531921579020404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alchemistSlime-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 240
+        width: 120
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb26eaff6557a9700800000000000000
+      internalID: 547879321196192443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alchemistSlime-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 240
+        width: 120
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50d6dc7fbd0c65b50800000000000000
+      internalID: 6581659956436364549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alchemistSlime-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 240
+        width: 120
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35c7451a207b288a0800000000000000
+      internalID: -6304275306440786861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alchemistSlime-Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 240
+        width: 120
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 765bc4f1ffb856c30800000000000000
+      internalID: 4352038542781494631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alchemistSlime-Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 240
+        width: 120
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c302b9db85d18640800000000000000
+      internalID: 5080576651280122818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alchemistSlime-Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 120
+        width: 120
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d8d6a9927b2ba710800000000000000
+      internalID: 1705504655093979347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alchemistSlime-Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 120
+        width: 120
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5a3b30f7d6125b50800000000000000
+      internalID: 6580347122245909083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alchemistSlime-Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 120
+        width: 120
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08054434ab3c23800800000000000000
+      internalID: 590749705898840192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alchemistSlime-Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 120
+        width: 120
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 730130e7d6ea98a00800000000000000
+      internalID: 759329797477437495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alchemistSlime-Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 120
+        width: 120
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 269d1eb18872682f0800000000000000
+      internalID: -971045204114941598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alchemistSlime-Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 120
+        width: 120
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 350c9192b47b33f50800000000000000
+      internalID: 6860028190855381075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alchemistSlime-Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 120
+        width: 120
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c5b7fd43673c4950800000000000000
+      internalID: 6434578867254965697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alchemistSlime-Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 120
+        width: 120
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e26db4bacb5557ae0800000000000000
+      internalID: -1552240227743181266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alchemistSlime-Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 120
+        width: 120
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f189770b1ba8585b0800000000000000
+      internalID: -5366730885167605729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alchemistSlime-Sheet_20
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 120
+        width: 120
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06792e860202501f0800000000000000
+      internalID: -1079421212114643104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alchemistSlime-Sheet_21
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 120
+        width: 120
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fe3395fdb65510f0800000000000000
+      internalID: -1146915156227047696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alchemistSlime-Sheet_22
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 120
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb9387b71044971b0800000000000000
+      internalID: -5658416683657184836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alchemistSlime-Sheet_23
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 0
+        width: 120
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3a34fe88f5c739a0800000000000000
+      internalID: -6253311886239712705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alchemistSlime-Sheet_24
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 0
+        width: 120
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33585112dfad9c590800000000000000
+      internalID: -7653345311022807757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alchemistSlime-Sheet_25
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 0
+        width: 120
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe396e9a6b6cdd8b0800000000000000
+      internalID: -5125722313040948241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alchemistSlime-Sheet_26
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 0
+        width: 120
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6944bdf4aad2cb2c0800000000000000
+      internalID: -4414603325222468458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alchemistSlime-Sheet_27
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 0
+        width: 120
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d785714b8ce16e8a0800000000000000
+      internalID: -6276295183330486147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alchemistSlime-Sheet_28
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 0
+        width: 120
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3304ea0fc8ad803d0800000000000000
+      internalID: -3240099633024843725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alchemistSlime-Sheet_29
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 0
+        width: 120
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0f8e85c2f9faa770800000000000000
+      internalID: 8622979257646092044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alchemistSlime-Sheet_30
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 0
+        width: 120
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71baab9c5d6a8b8a0800000000000000
+      internalID: -6289093442480198889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alchemistSlime-Sheet_31
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 0
+        width: 120
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d11ec59d7226d7f90800000000000000
+      internalID: -6954294326300188387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alchemistSlime-Sheet_32
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 0
+        width: 120
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed1894265cc0f60c0800000000000000
+      internalID: -4580428254115429922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

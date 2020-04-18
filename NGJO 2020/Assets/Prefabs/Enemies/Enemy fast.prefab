@@ -1,5 +1,24 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!95 &8873573881170845374
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3457338147817698327}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 278b4f8571e3a0e48988468e7a06a9a5, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &4955573702479256563
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9,9 +28,10 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 515568088226505993, guid: 2eb29a9e5b006654b89fba6a9cb373af,
         type: 3}
-      propertyPath: m_Color.g
-      value: 0.66526496
-      objectReference: {fileID: 0}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -1496980233443060094, guid: 389e87bf13d62694093e84e37c4a3ccc,
+        type: 3}
     - target: {fileID: 842016753934455537, guid: 2eb29a9e5b006654b89fba6a9cb373af,
         type: 3}
       propertyPath: m_RootOrder
@@ -82,5 +102,12 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6443570054975089850, guid: 2eb29a9e5b006654b89fba6a9cb373af, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 2eb29a9e5b006654b89fba6a9cb373af, type: 3}
+--- !u!1 &3457338147817698327 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7727986455609323492, guid: 2eb29a9e5b006654b89fba6a9cb373af,
+    type: 3}
+  m_PrefabInstance: {fileID: 4955573702479256563}
+  m_PrefabAsset: {fileID: 0}
