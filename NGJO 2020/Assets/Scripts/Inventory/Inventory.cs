@@ -114,4 +114,50 @@ public class Inventory : MonoBehaviour
         }
         return true;
     }
+
+    public void RemoveIngredient(IngredientScriptableObject ingredient)
+    {
+        foreach (Item i in itemList)
+        {
+            if(ingredient == i)
+            {
+                Debug.Log(i.name + "was removed from inventory!");
+                if (i.amount == 1)
+                {
+                    itemList.Remove(i);
+                    Destroy(i.gameObject);
+                }
+                else
+                {
+                    i.amount--;
+                }
+            }
+        }
+    }
+    public bool CheckIngredients(PotionScriptableObject potion)
+    {
+        List<IngredientScriptableObject> requiredIngredients = new List<IngredientScriptableObject>(potion.ingredients);
+        List<int> ingredientAmount = new List<int>(potion.amountOfIngredients);
+
+        for (int i = 0; i < requiredIngredients.Count; i++)
+        {
+            foreach (Item it in itemList)
+            {
+                if(requiredIngredients[i] == it.ingredient)
+                {
+                    if(it.amount > ingredientAmount[i])
+                    {
+                        continue;
+                    }
+                    else
+                    {
+                        return false;
+                    }
+                }
+            }
+            return true;
+        }
+        Debug.Log("If inventory got to here somthing is probably wrong in the code!");
+        return false;
+    }
 }

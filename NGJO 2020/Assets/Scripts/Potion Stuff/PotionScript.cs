@@ -25,6 +25,11 @@ public class PotionScript : MonoBehaviour
         updateDisplayPotionAmount();
     }
 
+    private void Update()
+    {
+        updateDisplayPotionAmount();
+    }
+
     void updateDisplayPotionAmount()
     {
         amountOfPotion = potion.amountOfPotion;
