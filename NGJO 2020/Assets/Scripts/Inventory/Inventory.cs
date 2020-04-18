@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 /*
  Jônatas Dourado Porto
      */
@@ -42,32 +43,53 @@ public class Inventory : MonoBehaviour
         }
         // if is not full, add in the list and return
         //check if alredy exist tha item
-        Item it = get(item.name);
-        if(it == null)
+        Item it = get(item.ingredient._name);
+        GameObject[] g = GameObject.FindGameObjectsWithTag("ReagentUI");
+        if (it == null)
         {
-            GameObject g = Instantiate(SlotPrefab);
-            g.GetComponent<Image>().sprite = item.sprite;
-            Item i = g.AddComponent<Item>();
-            i.constructor(item);
-            itemList.Add(i);
-            Destroy(item.gameObject);
-            g.transform.parent = transform;
+            //GameObject g = Instantiate(SlotPrefab);
+            //g.GetComponent<Image>().sprite = item.sprite;
+            //Item i = g.AddComponent<Item>();
+            //i.constructor(item);
+            itemList.Add(item);
+            item.gameObject.GetComponent<SpriteRenderer>().sprite = null;
+            
+
+            foreach (GameObject i in g)
+            {
+                Debug.Log(i.name + "  " + item.ingredient._name);
+                if(i.name == item.ingredient._name)
+                {
+                    i.GetComponent<TextMeshProUGUI>().text = item.amount+"/1";
+                }
+            }
+            
+            //g.transform.parent = transform;
         }
         else
         {
             it.amount += item.amount;
+            Destroy(item.gameObject);
+            foreach (GameObject i in g)
+            {
+                Debug.Log(i.name + "  " + it.ingredient._name);
+                if (i.name == it.ingredient._name)
+                {
+                    i.GetComponent<TextMeshProUGUI>().text = it.amount + "/1";
+                }
+            }
         }
         
-        return itemList[itemList.Count - 1].name + " was added to the inventory!";
+        return itemList[itemList.Count - 1].ingredient._name + " was added to the inventory!";
 
     }
     private void remove(string itemName)
     {
         foreach (Item i in itemList)
         {
-            if (i.name == itemName)
+            if (i.ingredient._name == itemName)
             {  
-                Debug.Log(i.name + "was removed from inventory!");
+                Debug.Log(i.ingredient._name + "was removed from inventory!");
                 if(i.amount == 1)
                 {
                     itemList.Remove(i);
@@ -86,7 +108,7 @@ public class Inventory : MonoBehaviour
     {
         foreach (Item i in itemList)
         {
-            if (i.name == itemName)
+            if (i.ingredient._name == itemName)
             {
                 return i;
             }
@@ -100,7 +122,7 @@ public class Inventory : MonoBehaviour
             bool find = false;
             for (int j = 0; j < names.Length; j++)
             {
-                if (i.name == names[j])
+                if (i.ingredient._name == names[j])
                 {
                     find = true;
                     break;
@@ -121,7 +143,7 @@ public class Inventory : MonoBehaviour
         {
             if(ingredient == i)
             {
-                Debug.Log(i.name + "was removed from inventory!");
+                Debug.Log(i.ingredient._name + "was removed from inventory!");
                 if (i.amount == 1)
                 {
                     itemList.Remove(i);
