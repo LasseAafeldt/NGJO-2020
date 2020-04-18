@@ -10,12 +10,15 @@ public class PlayerMovement : MonoBehaviour {
 
 	//input variables
 	Vector2 movementInput;
+	Vector2 startPosition;
 
 
 	private void Awake() {
 		inputActions = new InputMaster();
 
 		inputActions.PlayerControls.Move.performed += ctx => movementInput = ctx.ReadValue<Vector2>();
+
+		startPosition = transform.position;
 	}
 
 	private void FixedUpdate() {
@@ -36,6 +39,6 @@ public class PlayerMovement : MonoBehaviour {
 	}
 
 	public void Respawn() {
-
+		transform.position = startPosition;
 	}
 }
