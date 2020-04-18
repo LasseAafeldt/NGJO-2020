@@ -18,29 +18,48 @@ public class Inventory : MonoBehaviour
         {
             Debug.LogWarning("Dude you mess up! There is more than one inventory instance.");
         }
+        if(this != Inventory.instance && Inventory.instance != null)
+        {
+            Destroy(this.gameObject);
+            return;
+        }
         instance = this;
+        DontDestroyOnLoad(this.gameObject);
     }
     #endregion
 
-    private int maxSize;
-    public int row = 2;
-    public int column = 3;
-    public GameObject SlotPrefab;
+    //public int maxSize;
     public List<Item> itemList;
     
 
     void Start()
     {
         itemList = new List<Item>();
-        maxSize = row * column;
+        refreshUI();
+    }
+
+    public void refreshUI()
+    {
+        GameObject[] g = GameObject.FindGameObjectsWithTag("ReagentUI");
+        foreach (GameObject i in g)
+        {
+            foreach (Item item in itemList)
+            {
+                if (i.name == item.ingredient._name)
+                {
+                    i.GetComponent<TextMeshProUGUI>().text = item.amount + "/1";
+                }
+            }
+        }
     }
     public string add(Item item)
     {
         //if the list is full, return
+        /*
         if(itemList.Count == maxSize)
         {
             return "Inventory is full!";
-        }
+        }*/
         // if is not full, add in the list and return
         //check if alredy exist tha item
         Item it = get(item.ingredient._name);
@@ -53,17 +72,11 @@ public class Inventory : MonoBehaviour
             //i.constructor(item);
             itemList.Add(item);
             item.gameObject.GetComponent<SpriteRenderer>().sprite = null;
-            
+            item.gameObject.transform.parent = gameObject.transform;
 
-            foreach (GameObject i in g)
-            {
-                Debug.Log(i.name + "  " + item.ingredient._name);
-                if(i.name == item.ingredient._name)
-                {
-                    i.GetComponent<TextMeshProUGUI>().text = item.amount+"/1";
-                }
-            }
-            
+
+            refreshUI();
+
             //g.transform.parent = transform;
         }
         else

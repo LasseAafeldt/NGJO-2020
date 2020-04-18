@@ -10,8 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 8000405305449659439}
   - component: {fileID: 8000405305449659424}
+  - component: {fileID: -3298637607161002739}
   m_Layer: 5
-  m_Name: Reagents
+  m_Name: ReagentsUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -70,6 +71,18 @@ MonoBehaviour:
   m_ChildControlHeight: 1
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
+--- !u!114 &-3298637607161002739
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8000405305449659438}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e32005cdbfa51f4fb7db4bdc1aa8574, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8000405306071743659
 GameObject:
   m_ObjectHideFlags: 0
