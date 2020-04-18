@@ -12,7 +12,9 @@ public class ListOfPotions : MonoBehaviour
 
 
     public PotionScriptableObject charismaPotion;
-    //some other potions
+    public PotionScriptableObject dexterityPotion;
+    public PotionScriptableObject staminaPotion;
+    public PotionScriptableObject strengthPotion;
 
     private PotionScriptableObject potionToCraft;
 
