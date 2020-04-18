@@ -2266,10 +2266,11 @@ GameObject:
   m_Component:
   - component: {fileID: 5351594377383146440}
   - component: {fileID: 5351594377383146443}
+  - component: {fileID: 9192713531092484198}
   - component: {fileID: 5351594377383146442}
   - component: {fileID: 5351594377383146441}
   m_Layer: 5
-  m_Name: Default potion
+  m_Name: Charisma potion
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2303,6 +2304,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5351594377383146455}
   m_CullTransparentMesh: 0
+--- !u!114 &9192713531092484198
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5351594377383146455}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 192d9b9280628c44b98933139328981f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  potion: {fileID: 11400000, guid: e6917f061d4d09b4cb293d1530ae313e, type: 2}
 --- !u!114 &5351594377383146442
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2374,7 +2388,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 5351594377383146442}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 9192713531092484198}
+        m_MethodName: SelectPotionToCraft
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: e6917f061d4d09b4cb293d1530ae313e,
+            type: 2}
+          m_ObjectArgumentAssemblyTypeName: PotionScriptableObject, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &5661709151533906389
 GameObject:
   m_ObjectHideFlags: 0
