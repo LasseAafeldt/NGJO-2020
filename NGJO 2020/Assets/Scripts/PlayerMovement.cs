@@ -70,17 +70,19 @@ public class PlayerMovement : MonoBehaviour {
 	}
 
 	public void Respawn() {
-		respawn = true;
-		animator.SetBool("Respawn", true);
 		StartCoroutine(RespawnCoroutine());
 	}
 	IEnumerator RespawnCoroutine() {
-		yield return new WaitForSeconds(killCamDuration);
-		transform.position = startPosition;
-		Camera.main.transform.position = new Vector3(0, 0, -10);
-		Camera.main.transform.rotation = Quaternion.Euler(Vector3.zero);
-		Camera.main.orthographicSize = 5.4f;
-		respawn = false;
-		animator.SetBool("Respawn", false);
+		if (!respawn) {
+			respawn = true;
+			animator.SetBool("Respawn", true);
+			yield return new WaitForSeconds(killCamDuration);
+			transform.position = startPosition;
+			Camera.main.transform.position = new Vector3(0, 0, -10);
+			Camera.main.transform.rotation = Quaternion.Euler(Vector3.zero);
+			Camera.main.orthographicSize = 5.4f;
+			respawn = false;
+			animator.SetBool("Respawn", false);
+		}
 	}
 }
