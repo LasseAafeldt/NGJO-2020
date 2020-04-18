@@ -7,6 +7,8 @@ public class PlayerMovement : MonoBehaviour {
 	[SerializeField] private Rigidbody2D rb;
 
 	InputMaster inputActions;
+	Animator animator;
+	SpriteRenderer spriteRenderer;
 
 	//input variables
 	Vector2 movementInput;
@@ -15,19 +17,28 @@ public class PlayerMovement : MonoBehaviour {
 
 	private void Awake() {
 		inputActions = new InputMaster();
-
 		inputActions.PlayerControls.Move.performed += ctx => movementInput = ctx.ReadValue<Vector2>();
-
 		startPosition = transform.position;
+		animator = GetComponent<Animator>();
+		spriteRenderer = GetComponent<SpriteRenderer>();
 	}
 
 	private void FixedUpdate() {
 		DesiredMove();
 	}
 
+	public bool facingRight = true;
 	void DesiredMove() {
 		Debug.Log("movement input: " + movementInput);
 		rb.MovePosition(rb.position + movementInput * moveSpeed * Time.fixedDeltaTime);
+		animator.SetFloat("X", movementInput.x);
+		animator.SetFloat("Y", movementInput.y);
+
+		float h = movementInput.x;
+		if (h > 0 && !facingRight || h < 0 && facingRight) {
+			facingRight = !facingRight;
+			spriteRenderer.flipX = !spriteRenderer.flipX;
+		}
 	}
 
 	private void OnEnable() {

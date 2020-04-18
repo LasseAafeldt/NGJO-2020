@@ -14,6 +14,15 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Room3.unity
     guid: 157fa51d3682a194fba3b13aa1b2f7ec
+  - enabled: 1
+    path: Assets/Scenes/Room4.unity
+    guid: 025808b6ab0ad894abd61340f7e70dd2
+  - enabled: 1
+    path: Assets/Scenes/Room5.unity
+    guid: 71235af0d29408c47bd7db9ac45a8b48
+  - enabled: 1
+    path: Assets/Scenes/Room6.unity
+    guid: 920ad2e415c4d954dae885363b94eba9
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 759effef68c11e24ba4206199a888052,
       type: 2}
