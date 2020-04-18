@@ -4,8 +4,8 @@ using UnityEngine;
 
 [RequireComponent(typeof(Collider2D))]
 public class Enemy : MonoBehaviour {
-	public Vector2[] targets;
-	public bool loop = true;
+	public EnemyPath path;
+
 	public float speed = 3;
 	public float stepDelay = 0;
 	public float terminalDelay = 1;
@@ -15,15 +15,15 @@ public class Enemy : MonoBehaviour {
 	int nextTarget = 1;
 
 	void Start() {
-		transform.position = targets[0];
+		transform.position = path.targets[0];
 	}
 
 	void Update() {
 		if (moving) {
-			transform.position = Vector2.MoveTowards(transform.position, targets[currentTarget], speed * Time.deltaTime);
-			if (Vector2.Distance(transform.position, targets[currentTarget]) < speed * Time.deltaTime) {
-				if (currentTarget >= targets.Length - 1) {
-					if (loop) {
+			transform.position = Vector2.MoveTowards(transform.position, path.targets[currentTarget], speed * Time.deltaTime);
+			if (Vector2.Distance(transform.position, path.targets[currentTarget]) < speed * Time.deltaTime) {
+				if (currentTarget >= path.targets.Length - 1) {
+					if (path.loop) {
 						currentTarget = 0;
 						StartCoroutine(Wait(stepDelay));
 						return;
@@ -31,7 +31,7 @@ public class Enemy : MonoBehaviour {
 						nextTarget = -nextTarget;
 						StartCoroutine(Wait(terminalDelay));
 					}
-				} else if (currentTarget <= 0 && !loop) {
+				} else if (currentTarget <= 0 && !path.loop) {
 					nextTarget = -nextTarget;
 					StartCoroutine(Wait(terminalDelay));
 				}
@@ -51,17 +51,6 @@ public class Enemy : MonoBehaviour {
 	private void OnTriggerEnter2D(Collider2D collision) {
 		if (collision.GetComponent<PlayerMovement>()) {
 			collision.GetComponent<PlayerMovement>().Respawn();
-		}
-	}
-
-	private void OnDrawGizmos() {
-		Gizmos.color = Color.magenta;
-		if (targets != null && targets.Length >= 2) {
-			for (var i = 0; i < targets.Length - 1; i++)
-				Gizmos.DrawLine(targets[i], targets[i + 1]);
-			if (loop) {
-				Gizmos.DrawLine(targets[0], targets[targets.Length - 1]);
-			}
 		}
 	}
 }
