@@ -70,4 +70,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3087ad72c38e9564290b1190041f0213, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scenesCount: 6
+  scenesCount: 8
