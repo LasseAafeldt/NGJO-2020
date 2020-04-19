@@ -8,7 +8,7 @@ public class StartButtons : MonoBehaviour {
 	public GameObject creditsPanel;
 
 	public void Play() {
-		SceneManager.LoadScene("Room" + Random.Range(1, scenesCount + 1));
+		SceneManager.LoadScene(2);
 	}
 
 	public void ShowCredits() {
