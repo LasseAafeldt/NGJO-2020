@@ -7,6 +7,10 @@ public class CraftPotion : MonoBehaviour {
 
 	public void MakePotion() {
 		PotionScriptableObject potionToCraft = ListOfPotions.instance.GetPotionToCraft();
+		if (potionToCraft.amountOfPotion <= 0) {
+			Debug.Log("Already crafted");
+			return;
+		}
 		if (Inventory.instance == null) {
 			Debug.LogError("No inventory was assigned in craftPotion component");
 			return;
