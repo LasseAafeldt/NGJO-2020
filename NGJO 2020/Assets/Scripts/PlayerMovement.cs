@@ -7,6 +7,7 @@ public class PlayerMovement : MonoBehaviour {
 	[SerializeField] private float moveSpeed = 2f;
 	[SerializeField] private Rigidbody2D rb;
 	public AudioSource enemyAttack;
+	public AudioSource pickup;
 	[Space]
 	public Vector3 killCamPosition;
 	public float killCamMaxMove = 0.1f;

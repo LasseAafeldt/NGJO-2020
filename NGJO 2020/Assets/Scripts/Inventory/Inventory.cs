@@ -25,65 +25,53 @@ public class Inventory : MonoBehaviour {
 
 
 
-        potionsOrdered = new List<PotionScriptableObject>();
-        //itemList = new List<Item>();
-        foreach (Item i in itemList)
-        {
-            i.amount = initialItemAmount;
-        }
+		potionsOrdered = new List<PotionScriptableObject>();
+		//itemList = new List<Item>();
+		foreach (Item i in itemList) {
+			i.amount = initialItemAmount;
+		}
 
-        foreach (PotionScriptableObject p in potionsToCraft)
-        {
-            p.amountOfPotion = 0;
-        }
-        while (maxPotions > 0)
-        {
-            foreach (PotionScriptableObject p in potionsToCraft)
-            {
-                if (p.amountOfPotion == 0)
-                {
-                    p.amountOfPotion = Random.Range(0, 2);
-                    if (p.amountOfPotion > 0)
-                    {
-                        Debug.Log("Potion to craft: " + p._name);
-                        potionsOrdered.Add(p);
-                        foreach (IngredientScriptableObject i in p.ingredients)
-                        {
-                            if (!itemsToCollect.ContainsKey(i._name))
-                            {
-                                itemsToCollect.Add(i._name, 1);
-                            }
-                            else
-                            {
-                                itemsToCollect[i._name]++;
-                            }
-                        }
-                        maxPotions -= p.amountOfPotion;
-                        if (maxPotions <= 0)
-                        {
-                            break;
-                        }
-                    }
-                }
-            }
-        }
+		foreach (PotionScriptableObject p in potionsToCraft) {
+			p.amountOfPotion = 0;
+		}
+		while (maxPotions > 0) {
+			foreach (PotionScriptableObject p in potionsToCraft) {
+				if (p.amountOfPotion == 0) {
+					p.amountOfPotion = Random.Range(0, 2);
+					if (p.amountOfPotion > 0) {
+						Debug.Log("Potion to craft: " + p._name);
+						potionsOrdered.Add(p);
+						foreach (IngredientScriptableObject i in p.ingredients) {
+							if (!itemsToCollect.ContainsKey(i._name)) {
+								itemsToCollect.Add(i._name, 1);
+							} else {
+								itemsToCollect[i._name]++;
+							}
+						}
+						maxPotions -= p.amountOfPotion;
+						if (maxPotions <= 0) {
+							break;
+						}
+					}
+				}
+			}
+		}
 
-        refreshUI();
-    }
+		refreshUI();
+	}
 	#endregion
 
 	public int maxPotions = 3;
 	public List<PotionScriptableObject> potionsToCraft;
-    [HideInInspector]
-    public List<PotionScriptableObject> potionsOrdered;
+	[HideInInspector]
+	public List<PotionScriptableObject> potionsOrdered;
 	public int initialItemAmount = 0;
 	public List<Item> itemList;
 	public Dictionary<string, int> itemsToCollect = new Dictionary<string, int>();
 	[Space]
 	public GameObject allCollectedCanvas;
 
-	void Start()
-    {
+	void Start() {
 	}
 
 	bool allItemsCollected;
@@ -113,6 +101,9 @@ public class Inventory : MonoBehaviour {
 		}
 		if (allItemsCollected) {
 			allCollectedCanvas.SetActive(true);
+			foreach (Enemy e in FindObjectsOfType<Enemy>()) {
+				e.enabled = false;
+			}
 			StartCoroutine(LoadCraft());
 		}
 	}
@@ -219,16 +210,15 @@ public class Inventory : MonoBehaviour {
 		}
 	}
 	public bool CheckIngredients(PotionScriptableObject potion) {
-        Debug.Log("Checking ingredients...");
+		Debug.Log("Checking ingredients...");
 		List<IngredientScriptableObject> requiredIngredients = new List<IngredientScriptableObject>(potion.ingredients);
-        if(requiredIngredients == null)
-        {
-            Debug.Log("no potion has been selected");
-            return false;
-        }
+		if (requiredIngredients == null) {
+			Debug.Log("no potion has been selected");
+			return false;
+		}
 		List<int> ingredientAmount = new List<int>(potion.amountOfIngredients);
-        //List<int> ingredientAmount = new List<int>();
-        int checkedIngredients = 0;
+		//List<int> ingredientAmount = new List<int>();
+		int checkedIngredients = 0;
 
 		for (int i = 0; i < requiredIngredients.Count; i++) {
 			//int value;
@@ -238,9 +228,9 @@ public class Inventory : MonoBehaviour {
 			bool found = false;
 			foreach (Item it in itemList) {
 				if (requiredIngredients[i] == it.ingredient) {
-                    checkedIngredients++;
+					checkedIngredients++;
 					if (it.amount >= ingredientAmount[i]) {
-                        Debug.Log("it: " + it.amount + "  required: " + ingredientAmount[i]);
+						Debug.Log("it: " + it.amount + "  required: " + ingredientAmount[i]);
 						found = true;
 						continue;
 					} else {
@@ -249,11 +239,10 @@ public class Inventory : MonoBehaviour {
 					}
 				}
 			}
-            if (!(checkedIngredients > 0))
-            {                
-			    Debug.Log("Ingredients for " + potion._name + " are missing");
-                return false; //no ingredients were checked so there were none
-            }
+			if (!(checkedIngredients > 0)) {
+				Debug.Log("Ingredients for " + potion._name + " are missing");
+				return false; //no ingredients were checked so there were none
+			}
 			//Debug.Log("Missing ingredient for " + potion._name);
 			if (!found)
 				return false;

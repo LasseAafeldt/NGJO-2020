@@ -19,8 +19,9 @@ public class ItemInteractable : MonoBehaviour {
 	private void OnTriggerEnter2D(Collider2D collision) {
 		//if the player hit the item
 		if (collision.GetComponent<PlayerMovement>()) {
+			collision.GetComponent<PlayerMovement>().pickup.Play();
 			Inventory.instance.add(item);
-			this.gameObject.GetComponent<SpriteRenderer>().sprite = null;
+			GetComponent<SpriteRenderer>().sprite = null;
 			Destroy(this);
 		}
 	}

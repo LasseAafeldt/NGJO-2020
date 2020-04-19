@@ -29,7 +29,7 @@ public class PotionScript : MonoBehaviour {
 	void updateDisplayPotionAmount() {
 		amountOfPotion = potion.amountOfPotion;
 		//updating text
-		string amount = "X " + amountOfPotion;
+		string amount = "x" + amountOfPotion;
 		amountText.text = amount;
 	}
 
