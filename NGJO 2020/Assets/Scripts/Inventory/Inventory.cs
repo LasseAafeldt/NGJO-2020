@@ -192,17 +192,23 @@ public class Inventory : MonoBehaviour {
 	}
 
 	public void RemoveIngredient(IngredientScriptableObject ingredient) {
-		foreach (Item i in itemList) {
-			if (ingredient == i.ingredient) {
-				if (i.amount == 1) {
-					itemList.Remove(i);
-					//Destroy(i.gameObject);
-				} else {
-					i.amount--;
-				}
-				Debug.Log(i.ingredient._name + "was removed from inventory!");
-			}
-		}
+        List<Item> it = itemList;
+        for (int i = itemList.Count - 1; i >= 0; i--)
+        {
+            if (ingredient == it[i].ingredient)
+            {
+                Debug.Log(it[i].ingredient._name + "was removed from inventory!");
+                if (it[i].amount <= 1)
+                {
+                    itemList.Remove(it[i]);
+                    //Destroy(i.gameObject);
+                }
+                else
+                {
+                    it[i].amount--;
+                }
+            }
+        }
 	}
 	public bool CheckIngredients(PotionScriptableObject potion) {
 		List<IngredientScriptableObject> requiredIngredients = new List<IngredientScriptableObject>(potion.ingredients);
@@ -224,8 +230,8 @@ public class Inventory : MonoBehaviour {
 					}
 				}
 			}
-			Debug.Log("Missing ingredient for " + potion._name);
-			return false;
+			//Debug.Log("Missing ingredient for " + potion._name);
+			//return false;
 		}
 		//Debug.Log("If inventory got to here somthing is probably wrong in the code!");
 		return true;
