@@ -235,7 +235,7 @@ public class Inventory : MonoBehaviour {
 
 
 
-	public string GetAmount(string ingredient) {
+	public string GetAmount(string ingredient, int requiredAmount) {
 		string s;
 		Item i = get(ingredient);
 		if (i) {
@@ -247,7 +247,7 @@ public class Inventory : MonoBehaviour {
 		if (!itemsToCollect.ContainsKey(ingredient)) {
 			itemsToCollect.Add(ingredient, 0);
 		}
-		s += itemsToCollect[ingredient];
+		s += requiredAmount.ToString();
 		return s;
 	}
 }

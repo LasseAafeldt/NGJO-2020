@@ -43,12 +43,11 @@ public class ListOfPotions : MonoBehaviour {
 		for (int i = 0; i < potion.ingredients.Count; i++) {
 			ingredientsSprite[i].gameObject.SetActive(true);
 			ingredientsSprite[i].sprite = potion.ingredients[i].sprite;
-			ingredientsText[i].text = Inventory.instance.GetAmount(potion.ingredients[i]._name);
+			ingredientsText[i].text = Inventory.instance.GetAmount(potion.ingredients[i]._name, potion.amountOfIngredients[i]);
 		}
 	}
 
-    public PotionScriptableObject GetPotionToCraft()
-    {
-        return potionToCraft;
-    }
+	public PotionScriptableObject GetPotionToCraft() {
+		return potionToCraft;
+	}
 }
