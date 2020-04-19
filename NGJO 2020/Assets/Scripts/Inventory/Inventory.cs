@@ -24,13 +24,32 @@ public class Inventory : MonoBehaviour {
 	}
 	#endregion
 
-	//public int maxSize;
+	public int maxPotions = 3;
+	public List<PotionScriptableObject> potionsToCraft;
 	public List<Item> itemList;
-
-	public Dictionary<Item, int> itemsToCollect = new Dictionary<Item, int>();
+	public Dictionary<string, int> itemsToCollect = new Dictionary<string, int>();
 
 	void Start() {
 		itemList = new List<Item>();
+
+		foreach (PotionScriptableObject p in potionsToCraft) {
+			p.amountOfPotion = 0;
+		}
+		foreach (PotionScriptableObject p in potionsToCraft) {
+			p.amountOfPotion = Random.Range(0, 3);
+			foreach (IngredientScriptableObject i in p.ingredients) {
+				if (!itemsToCollect.ContainsKey(i._name)) {
+					itemsToCollect.Add(i._name, 1);
+				} else {
+					itemsToCollect[i._name]++;
+				}
+			}
+			maxPotions -= p.amountOfPotion;
+			if (maxPotions <= 0) {
+				break;
+			}
+		}
+
 		refreshUI();
 	}
 
@@ -40,10 +59,7 @@ public class Inventory : MonoBehaviour {
 			bool done = false;
 			foreach (Item item in itemList) {
 				if (i.name == item.ingredient._name) {
-					if (!itemsToCollect.ContainsKey(item)) {
-						itemsToCollect.Add(item, 0);
-					}
-					i.GetComponent<TextMeshProUGUI>().text = item.amount + "/" + itemsToCollect[item];
+					WriteAmount(i, item, item.amount);
 					done = true;
 					break;
 				}
@@ -52,15 +68,28 @@ public class Inventory : MonoBehaviour {
 				foreach (GameObject go in FindObjectOfType<SpawnItemsInAvailiblePosition>().itemsToSpawn) {
 					Item item = go.GetComponent<Item>();
 					if (i.name == item.ingredient._name) {
-						if (!itemsToCollect.ContainsKey(item)) {
-							itemsToCollect.Add(item, 0);
-						}
-						i.GetComponent<TextMeshProUGUI>().text = "0/" + itemsToCollect[item];
+						WriteAmount(i, item, 0);
 					}
 				}
 			}
 		}
 	}
+	void WriteAmount(GameObject i, Item item, int amount) {
+		if (!itemsToCollect.ContainsKey(item.ingredient._name)) {
+			itemsToCollect.Add(item.ingredient._name, 0);
+		}
+		if (itemsToCollect[item.ingredient._name] > 0) {
+			if (amount >= itemsToCollect[item.ingredient._name]) {
+				i.GetComponent<TextMeshProUGUI>().text = "<color=\"green\">";
+			} else {
+				i.GetComponent<TextMeshProUGUI>().text = "<color=\"red\">";
+			}
+		} else {
+			i.GetComponent<TextMeshProUGUI>().text = "";
+		}
+		i.GetComponent<TextMeshProUGUI>().text += amount + "/" + itemsToCollect[item.ingredient._name];
+	}
+
 	public string add(Item item) {
 		//if the list is full, return
 		/*
