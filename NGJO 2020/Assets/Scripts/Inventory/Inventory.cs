@@ -193,14 +193,14 @@ public class Inventory : MonoBehaviour {
 
 	public void RemoveIngredient(IngredientScriptableObject ingredient) {
 		foreach (Item i in itemList) {
-			if (ingredient == i) {
-				Debug.Log(i.ingredient._name + "was removed from inventory!");
+			if (ingredient == i.ingredient) {
 				if (i.amount == 1) {
 					itemList.Remove(i);
-					Destroy(i.gameObject);
+					//Destroy(i.gameObject);
 				} else {
 					i.amount--;
 				}
+				Debug.Log(i.ingredient._name + "was removed from inventory!");
 			}
 		}
 	}
