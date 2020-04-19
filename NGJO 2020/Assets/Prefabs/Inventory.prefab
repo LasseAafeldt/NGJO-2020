@@ -18,7 +18,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1229728049
 RectTransform:
   m_ObjectHideFlags: 0
@@ -116,7 +116,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1852332270
 RectTransform:
   m_ObjectHideFlags: 0
@@ -307,5 +307,13 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 78b869d13ae7d8d4d91b9b032535fd73, type: 2}
   - {fileID: 11400000, guid: fb53867399d40e24e90be053bc13fac2, type: 2}
   - {fileID: 11400000, guid: a4700a54443bbd64f8778ebf89ea5b32, type: 2}
-  itemList: []
-  text: {fileID: 1852332268}
+  itemList:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  allCollectedCanvas: {fileID: 1229728048}

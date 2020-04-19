@@ -133,11 +133,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Inventory
       objectReference: {fileID: 0}
-    - target: {fileID: 4764685482226196452, guid: df8d6094e5c193849a60e47022316f62,
-        type: 3}
-      propertyPath: itemList.Array.size
-      value: 8
-      objectReference: {fileID: 0}
     - target: {fileID: 4764685482226196453, guid: df8d6094e5c193849a60e47022316f62,
         type: 3}
       propertyPath: m_LocalPosition.x
