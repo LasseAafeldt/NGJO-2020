@@ -110,7 +110,7 @@ public class Inventory : MonoBehaviour {
 	}
 	IEnumerator LoadCraft() {
 		yield return new WaitForSeconds(2);
-		SceneManager.LoadScene("Potion UI test");
+		SceneManager.LoadScene(1);
 	}
 
 	public string add(Item item) {
@@ -206,32 +206,34 @@ public class Inventory : MonoBehaviour {
 	}
 	public bool CheckIngredients(PotionScriptableObject potion) {
 		List<IngredientScriptableObject> requiredIngredients = new List<IngredientScriptableObject>(potion.ingredients);
-        //List<int> ingredientAmount = new List<int>(potion.amountOfIngredients);
-        List<int> ingredientAmount = new List<int>();
+		List<int> ingredientAmount = new List<int>(potion.amountOfIngredients);
+		//List<int> ingredientAmount = new List<int>();
 
 		for (int i = 0; i < requiredIngredients.Count; i++) {
-            int value;
-            //ingredientAmount.Add(itemsToCollect.(requiredIngredients[i]._name));
-            Debug.Log("amount ingredient required: " + ingredientAmount[i] + " of " + requiredIngredients[i].name);
+			//int value;
+			//ingredientAmount.Add(itemsToCollect.(requiredIngredients[i]._name));
+			//Debug.Log("amount ingredient required: " + ingredientAmount[i] + " of " + requiredIngredients[i].name);
 
 			foreach (Item it in itemList) {
 				if (requiredIngredients[i] == it.ingredient) {
-					if (it.amount > ingredientAmount[i]) {
+					if (it.amount >= ingredientAmount[i]) {
 						continue;
 					} else {
+						Debug.Log("No enough ingredients for " + potion._name);
 						return false;
 					}
 				}
 			}
-			return true;
+			Debug.Log("Missing ingredient for " + potion._name);
+			return false;
 		}
-		Debug.Log("If inventory got to here somthing is probably wrong in the code!");
-		return false;
-        
+		//Debug.Log("If inventory got to here somthing is probably wrong in the code!");
+		return true;
+
 	}
 
 
-    
+
 
 	public string GetAmount(string ingredient) {
 		string s;

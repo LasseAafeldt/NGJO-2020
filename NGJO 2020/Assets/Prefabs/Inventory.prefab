@@ -301,7 +301,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6d9df17d269a9c4b807c3a1e67180b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxPotions: 2
+  maxPotions: 3
   potionsToCraft:
   - {fileID: 11400000, guid: e6917f061d4d09b4cb293d1530ae313e, type: 2}
   - {fileID: 11400000, guid: 78b869d13ae7d8d4d91b9b032535fd73, type: 2}

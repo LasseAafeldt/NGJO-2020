@@ -287,7 +287,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea6cfe8709d4da443a2604224ffbac52, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NumItemsToSpawn: 2
+  NumItemsToSpawn: 3
   itemsToSpawn:
   - {fileID: 5776132333321059380, guid: 165bbdf0711425740a11e9b96907f720, type: 3}
   - {fileID: 5776132333321059380, guid: 623d0be495f65ce4685cd522544ed112, type: 3}

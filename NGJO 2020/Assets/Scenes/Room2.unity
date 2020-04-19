@@ -1255,17 +1255,17 @@ PrefabInstance:
     - target: {fileID: 2546692558991185460, guid: 6ac384d943f762d43ae22d5f09e9ea9c,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 5.12
+      value: -1.84
       objectReference: {fileID: 0}
     - target: {fileID: 2546692558991185460, guid: 6ac384d943f762d43ae22d5f09e9ea9c,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.7
+      value: 3.26
       objectReference: {fileID: 0}
     - target: {fileID: 2546692558991185463, guid: 6ac384d943f762d43ae22d5f09e9ea9c,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2546692559035768044, guid: 6ac384d943f762d43ae22d5f09e9ea9c,
         type: 3}
@@ -1410,12 +1410,12 @@ PrefabInstance:
     - target: {fileID: 2546692559651888772, guid: 6ac384d943f762d43ae22d5f09e9ea9c,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.88
+      value: 4.66
       objectReference: {fileID: 0}
     - target: {fileID: 2546692559651888772, guid: 6ac384d943f762d43ae22d5f09e9ea9c,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.32
+      value: 3.34
       objectReference: {fileID: 0}
     - target: {fileID: 2546692559782577738, guid: 6ac384d943f762d43ae22d5f09e9ea9c,
         type: 3}
@@ -1543,7 +1543,7 @@ PrefabInstance:
     - target: {fileID: 6894475833235978573, guid: 7163e210628d52a46ba3dba115ecf199,
         type: 3}
       propertyPath: targets.Array.data[1].x
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6894475833235978573, guid: 7163e210628d52a46ba3dba115ecf199,
         type: 3}
@@ -1583,7 +1583,7 @@ PrefabInstance:
     - target: {fileID: 6894475833235978573, guid: 7163e210628d52a46ba3dba115ecf199,
         type: 3}
       propertyPath: targets.Array.data[0].x
-      value: -7
+      value: -6
       objectReference: {fileID: 0}
     - target: {fileID: 6894475833235978575, guid: 7163e210628d52a46ba3dba115ecf199,
         type: 3}
