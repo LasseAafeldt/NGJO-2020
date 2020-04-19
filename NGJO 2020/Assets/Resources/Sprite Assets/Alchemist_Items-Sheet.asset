@@ -1,0 +1,320 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84a92b25f83d49b9bc132d206b370281, type: 3}
+  m_Name: Alchemist_Items-Sheet
+  m_EditorClassIdentifier: 
+  hashCode: -1341097477
+  material: {fileID: 1716343756421289094}
+  materialHashCode: 0
+  m_Version: 1.1.0
+  spriteSheet: {fileID: 2800000, guid: a530f1ad72f301d4dac901221660029d, type: 3}
+  m_SpriteCharacterTable:
+  - m_ElementType: 2
+    m_Unicode: 0
+    m_GlyphIndex: 0
+    m_Scale: 1
+    m_Name: Alchemist_Items-Sheet_1
+    m_HashCode: -166274635
+  - m_ElementType: 2
+    m_Unicode: 0
+    m_GlyphIndex: 1
+    m_Scale: 1
+    m_Name: Alchemist_Items-Sheet_3
+    m_HashCode: -166274633
+  - m_ElementType: 2
+    m_Unicode: 0
+    m_GlyphIndex: 2
+    m_Scale: 1
+    m_Name: Alchemist_Items-Sheet_0
+    m_HashCode: -166274636
+  - m_ElementType: 2
+    m_Unicode: 0
+    m_GlyphIndex: 3
+    m_Scale: 1
+    m_Name: Alchemist_Items-Sheet_2
+    m_HashCode: -166274634
+  - m_ElementType: 2
+    m_Unicode: 0
+    m_GlyphIndex: 4
+    m_Scale: 1
+    m_Name: Alchemist_Items-Sheet_6
+    m_HashCode: -166274638
+  - m_ElementType: 2
+    m_Unicode: 0
+    m_GlyphIndex: 5
+    m_Scale: 1
+    m_Name: Alchemist_Items-Sheet_4
+    m_HashCode: -166274640
+  - m_ElementType: 2
+    m_Unicode: 0
+    m_GlyphIndex: 6
+    m_Scale: 1
+    m_Name: Alchemist_Items-Sheet_7
+    m_HashCode: -166274637
+  - m_ElementType: 2
+    m_Unicode: 0
+    m_GlyphIndex: 7
+    m_Scale: 1
+    m_Name: Alchemist_Items-Sheet_5
+    m_HashCode: -166274639
+  - m_ElementType: 2
+    m_Unicode: 0
+    m_GlyphIndex: 8
+    m_Scale: 1
+    m_Name: Charisma Potion
+    m_HashCode: -2062014579
+  - m_ElementType: 2
+    m_Unicode: 0
+    m_GlyphIndex: 9
+    m_Scale: 1
+    m_Name: Strength Potion
+    m_HashCode: 796446342
+  - m_ElementType: 2
+    m_Unicode: 0
+    m_GlyphIndex: 10
+    m_Scale: 1
+    m_Name: Stamina Potion
+    m_HashCode: -491229138
+  - m_ElementType: 2
+    m_Unicode: 0
+    m_GlyphIndex: 11
+    m_Scale: 1
+    m_Name: Dexterity Potion
+    m_HashCode: 1035661021
+  m_SpriteGlyphTable:
+  - m_Index: 0
+    m_Metrics:
+      m_Width: 65
+      m_Height: 50
+      m_HorizontalBearingX: -32.5
+      m_HorizontalBearingY: 25
+      m_HorizontalAdvance: 65
+    m_GlyphRect:
+      m_X: 145
+      m_Y: 275
+      m_Width: 65
+      m_Height: 50
+    m_Scale: 1
+    m_AtlasIndex: 0
+    sprite: {fileID: 5103955712092355409, guid: a530f1ad72f301d4dac901221660029d,
+      type: 3}
+  - m_Index: 1
+    m_Metrics:
+      m_Width: 55
+      m_Height: 70
+      m_HorizontalBearingX: -27.5
+      m_HorizontalBearingY: 35
+      m_HorizontalAdvance: 55
+    m_GlyphRect:
+      m_X: 390
+      m_Y: 270
+      m_Width: 55
+      m_Height: 70
+    m_Scale: 1
+    m_AtlasIndex: 0
+    sprite: {fileID: -4897620230045987977, guid: a530f1ad72f301d4dac901221660029d,
+      type: 3}
+  - m_Index: 2
+    m_Metrics:
+      m_Width: 35
+      m_Height: 70
+      m_HorizontalBearingX: -17.5
+      m_HorizontalBearingY: 35
+      m_HorizontalAdvance: 35
+    m_GlyphRect:
+      m_X: 40
+      m_Y: 265
+      m_Width: 35
+      m_Height: 70
+    m_Scale: 1
+    m_AtlasIndex: 0
+    sprite: {fileID: -7994837025194578526, guid: a530f1ad72f301d4dac901221660029d,
+      type: 3}
+  - m_Index: 3
+    m_Metrics:
+      m_Width: 75
+      m_Height: 75
+      m_HorizontalBearingX: -37.5
+      m_HorizontalBearingY: 37.5
+      m_HorizontalAdvance: 75
+    m_GlyphRect:
+      m_X: 265
+      m_Y: 265
+      m_Width: 75
+      m_Height: 75
+    m_Scale: 1
+    m_AtlasIndex: 0
+    sprite: {fileID: -7041934578740029900, guid: a530f1ad72f301d4dac901221660029d,
+      type: 3}
+  - m_Index: 4
+    m_Metrics:
+      m_Width: 75
+      m_Height: 60
+      m_HorizontalBearingX: -37.5
+      m_HorizontalBearingY: 30
+      m_HorizontalAdvance: 75
+    m_GlyphRect:
+      m_X: 265
+      m_Y: 150
+      m_Width: 75
+      m_Height: 60
+    m_Scale: 1
+    m_AtlasIndex: 0
+    sprite: {fileID: 368402758797929580, guid: a530f1ad72f301d4dac901221660029d, type: 3}
+  - m_Index: 5
+    m_Metrics:
+      m_Width: 80
+      m_Height: 65
+      m_HorizontalBearingX: -40
+      m_HorizontalBearingY: 32.5
+      m_HorizontalAdvance: 80
+    m_GlyphRect:
+      m_X: 20
+      m_Y: 145
+      m_Width: 80
+      m_Height: 65
+    m_Scale: 1
+    m_AtlasIndex: 0
+    sprite: {fileID: -8972422314185795177, guid: a530f1ad72f301d4dac901221660029d,
+      type: 3}
+  - m_Index: 6
+    m_Metrics:
+      m_Width: 65
+      m_Height: 70
+      m_HorizontalBearingX: -32.5
+      m_HorizontalBearingY: 35
+      m_HorizontalAdvance: 65
+    m_GlyphRect:
+      m_X: 385
+      m_Y: 145
+      m_Width: 65
+      m_Height: 70
+    m_Scale: 1
+    m_AtlasIndex: 0
+    sprite: {fileID: 1895469437048422149, guid: a530f1ad72f301d4dac901221660029d,
+      type: 3}
+  - m_Index: 7
+    m_Metrics:
+      m_Width: 35
+      m_Height: 90
+      m_HorizontalBearingX: -17.5
+      m_HorizontalBearingY: 45
+      m_HorizontalAdvance: 35
+    m_GlyphRect:
+      m_X: 160
+      m_Y: 130
+      m_Width: 35
+      m_Height: 90
+    m_Scale: 1
+    m_AtlasIndex: 0
+    sprite: {fileID: 6589258517179773673, guid: a530f1ad72f301d4dac901221660029d,
+      type: 3}
+  - m_Index: 8
+    m_Metrics:
+      m_Width: 75
+      m_Height: 90
+      m_HorizontalBearingX: 3.65
+      m_HorizontalBearingY: 66.5
+      m_HorizontalAdvance: 75.2
+    m_GlyphRect:
+      m_X: 25
+      m_Y: 15
+      m_Width: 75
+      m_Height: 90
+    m_Scale: 1
+    m_AtlasIndex: 0
+    sprite: {fileID: 5468936552663581425, guid: a530f1ad72f301d4dac901221660029d,
+      type: 3}
+  - m_Index: 9
+    m_Metrics:
+      m_Width: 65
+      m_Height: 90
+      m_HorizontalBearingX: 9.12
+      m_HorizontalBearingY: 73
+      m_HorizontalAdvance: 65
+    m_GlyphRect:
+      m_X: 150
+      m_Y: 15
+      m_Width: 65
+      m_Height: 90
+    m_Scale: 1
+    m_AtlasIndex: 0
+    sprite: {fileID: -5486232336514007989, guid: a530f1ad72f301d4dac901221660029d,
+      type: 3}
+  - m_Index: 10
+    m_Metrics:
+      m_Width: 90
+      m_Height: 80
+      m_HorizontalBearingX: 7.1
+      m_HorizontalBearingY: 69
+      m_HorizontalAdvance: 90
+    m_GlyphRect:
+      m_X: 375
+      m_Y: 15
+      m_Width: 90
+      m_Height: 80
+    m_Scale: 1
+    m_AtlasIndex: 0
+    sprite: {fileID: -4814350520839086095, guid: a530f1ad72f301d4dac901221660029d,
+      type: 3}
+  - m_Index: 11
+    m_Metrics:
+      m_Width: 55
+      m_Height: 95
+      m_HorizontalBearingX: 5.98
+      m_HorizontalBearingY: 82.97
+      m_HorizontalAdvance: 55
+    m_GlyphRect:
+      m_X: 275
+      m_Y: 10
+      m_Width: 55
+      m_Height: 95
+    m_Scale: 1
+    m_AtlasIndex: 0
+    sprite: {fileID: -8555730859327861025, guid: a530f1ad72f301d4dac901221660029d,
+      type: 3}
+  spriteInfoList: []
+  fallbackSpriteAssets: []
+--- !u!21 &1716343756421289094
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: TextMeshPro/Sprite
+  m_Shader: {fileID: 4800000, guid: cf81c85f95fe47e1a27f6ae460cf182c, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: a530f1ad72f301d4dac901221660029d, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _ColorMask: 15
+    - _Stencil: 0
+    - _StencilComp: 8
+    - _StencilOp: 0
+    - _StencilReadMask: 255
+    - _StencilWriteMask: 255
+    - _UseUIAlphaClip: 0
+    m_Colors:
+    - _ClipRect: {r: -32767, g: -32767, b: 32767, a: 32767}
+    - _Color: {r: 1, g: 1, b: 1, a: 1}

@@ -22,48 +22,68 @@ public class Inventory : MonoBehaviour {
 		}
 		instance = this;
 		DontDestroyOnLoad(this.gameObject);
-	}
+
+
+
+        potionsOrdered = new List<PotionScriptableObject>();
+        //itemList = new List<Item>();
+        foreach (Item i in itemList)
+        {
+            i.amount = initialItemAmount;
+        }
+
+        foreach (PotionScriptableObject p in potionsToCraft)
+        {
+            p.amountOfPotion = 0;
+        }
+        while (maxPotions > 0)
+        {
+            foreach (PotionScriptableObject p in potionsToCraft)
+            {
+                if (p.amountOfPotion == 0)
+                {
+                    p.amountOfPotion = Random.Range(0, 2);
+                    if (p.amountOfPotion > 0)
+                    {
+                        Debug.Log("Potion to craft: " + p._name);
+                        potionsOrdered.Add(p);
+                        foreach (IngredientScriptableObject i in p.ingredients)
+                        {
+                            if (!itemsToCollect.ContainsKey(i._name))
+                            {
+                                itemsToCollect.Add(i._name, 1);
+                            }
+                            else
+                            {
+                                itemsToCollect[i._name]++;
+                            }
+                        }
+                        maxPotions -= p.amountOfPotion;
+                        if (maxPotions <= 0)
+                        {
+                            break;
+                        }
+                    }
+                }
+            }
+        }
+
+        refreshUI();
+    }
 	#endregion
 
 	public int maxPotions = 3;
 	public List<PotionScriptableObject> potionsToCraft;
+    [HideInInspector]
+    public List<PotionScriptableObject> potionsOrdered;
 	public int initialItemAmount = 0;
 	public List<Item> itemList;
 	public Dictionary<string, int> itemsToCollect = new Dictionary<string, int>();
 	[Space]
 	public GameObject allCollectedCanvas;
 
-	void Start() {
-		//itemList = new List<Item>();
-		foreach (Item i in itemList) {
-			i.amount = initialItemAmount;
-		}
-
-		foreach (PotionScriptableObject p in potionsToCraft) {
-			p.amountOfPotion = 0;
-		}
-		while (maxPotions > 0) {
-			foreach (PotionScriptableObject p in potionsToCraft) {
-				if (p.amountOfPotion == 0) {
-					p.amountOfPotion = Random.Range(0, 2);
-					if (p.amountOfPotion > 0) {
-						foreach (IngredientScriptableObject i in p.ingredients) {
-							if (!itemsToCollect.ContainsKey(i._name)) {
-								itemsToCollect.Add(i._name, 1);
-							} else {
-								itemsToCollect[i._name]++;
-							}
-						}
-						maxPotions -= p.amountOfPotion;
-						if (maxPotions <= 0) {
-							break;
-						}
-					}
-				}
-			}
-		}
-
-		refreshUI();
+	void Start()
+    {
 	}
 
 	bool allItemsCollected;

@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7c45067742c34ab429edeb1e75413b2e, type: 3}
-  m_Name: Strength potion
+  m_Name: Strength Potion
   m_EditorClassIdentifier: 
   _name: Strength Potion
   description: Gives you enormous strength, and a strange urge to destroy the town.
@@ -20,4 +20,4 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 70ad72c5525d8f1498bc230ea9c5559e, type: 2}
   - {fileID: 11400000, guid: 88714e98c1eea904aaed7b3647c9924e, type: 2}
   amountOfIngredients: 010000000100000001000000
-  amountOfPotion: 0
+  amountOfPotion: 1
