@@ -46,4 +46,9 @@ public class ListOfPotions : MonoBehaviour {
 			ingredientsText[i].text = Inventory.instance.GetAmount(potion.ingredients[i]._name);
 		}
 	}
+
+    public PotionScriptableObject GetPotionToCraft()
+    {
+        return potionToCraft;
+    }
 }

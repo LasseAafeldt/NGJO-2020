@@ -183,9 +183,14 @@ public class Inventory : MonoBehaviour {
 	}
 	public bool CheckIngredients(PotionScriptableObject potion) {
 		List<IngredientScriptableObject> requiredIngredients = new List<IngredientScriptableObject>(potion.ingredients);
-		List<int> ingredientAmount = new List<int>(potion.amountOfIngredients);
+        //List<int> ingredientAmount = new List<int>(potion.amountOfIngredients);
+        List<int> ingredientAmount = new List<int>();
 
 		for (int i = 0; i < requiredIngredients.Count; i++) {
+            int value;
+            //ingredientAmount.Add(itemsToCollect.(requiredIngredients[i]._name));
+            Debug.Log("amount ingredient required: " + ingredientAmount[i] + " of " + requiredIngredients[i].name);
+
 			foreach (Item it in itemList) {
 				if (requiredIngredients[i] == it.ingredient) {
 					if (it.amount > ingredientAmount[i]) {
@@ -199,7 +204,11 @@ public class Inventory : MonoBehaviour {
 		}
 		Debug.Log("If inventory got to here somthing is probably wrong in the code!");
 		return false;
+        
 	}
+
+
+    
 
 	public string GetAmount(string ingredient) {
 		string s;
