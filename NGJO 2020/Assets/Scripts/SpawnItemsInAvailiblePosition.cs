@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SpawnItemsInAvailiblePosition : MonoBehaviour {
 	[SerializeField] private int NumItemsToSpawn = 10;
-	[SerializeField] private GameObject[] itemsToSpawn;
+	public GameObject[] itemsToSpawn;
 
 	ItemSpawnPositions spawnPoints;
 
