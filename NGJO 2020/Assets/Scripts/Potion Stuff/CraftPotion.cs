@@ -27,6 +27,7 @@ public class CraftPotion : MonoBehaviour {
 		}
 		potionToCraft.amountOfPotion--;
 		Debug.Log("I crafted a potion");
+		ListOfPotions.instance.SetPotionToCraft(potionToCraft);
 
 		foreach (PotionScriptableObject p in Inventory.instance.potionsToCraft) {
 			if (p.amountOfPotion > 0) {

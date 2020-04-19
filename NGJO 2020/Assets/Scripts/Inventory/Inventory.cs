@@ -27,13 +27,17 @@ public class Inventory : MonoBehaviour {
 
 	public int maxPotions = 3;
 	public List<PotionScriptableObject> potionsToCraft;
+	public int initialItemAmount = 0;
 	public List<Item> itemList;
 	public Dictionary<string, int> itemsToCollect = new Dictionary<string, int>();
 	[Space]
 	public GameObject allCollectedCanvas;
 
 	void Start() {
-		itemList = new List<Item>();
+		//itemList = new List<Item>();
+		foreach (Item i in itemList) {
+			i.amount = initialItemAmount;
+		}
 
 		foreach (PotionScriptableObject p in potionsToCraft) {
 			p.amountOfPotion = 0;
@@ -192,23 +196,18 @@ public class Inventory : MonoBehaviour {
 	}
 
 	public void RemoveIngredient(IngredientScriptableObject ingredient) {
-        List<Item> it = itemList;
-        for (int i = itemList.Count - 1; i >= 0; i--)
-        {
-            if (ingredient == it[i].ingredient)
-            {
-                Debug.Log(it[i].ingredient._name + "was removed from inventory!");
-                if (it[i].amount <= 1)
-                {
-                    itemList.Remove(it[i]);
-                    //Destroy(i.gameObject);
-                }
-                else
-                {
-                    it[i].amount--;
-                }
-            }
-        }
+		List<Item> it = itemList;
+		for (int i = itemList.Count - 1; i >= 0; i--) {
+			if (ingredient == it[i].ingredient) {
+				Debug.Log(it[i].ingredient._name + "was removed from inventory!");
+				if (it[i].amount <= 1) {
+					itemList.Remove(it[i]);
+					//Destroy(i.gameObject);
+				} else {
+					it[i].amount--;
+				}
+			}
+		}
 	}
 	public bool CheckIngredients(PotionScriptableObject potion) {
 		List<IngredientScriptableObject> requiredIngredients = new List<IngredientScriptableObject>(potion.ingredients);
@@ -220,9 +219,11 @@ public class Inventory : MonoBehaviour {
 			//ingredientAmount.Add(itemsToCollect.(requiredIngredients[i]._name));
 			//Debug.Log("amount ingredient required: " + ingredientAmount[i] + " of " + requiredIngredients[i].name);
 
+			bool found = false;
 			foreach (Item it in itemList) {
 				if (requiredIngredients[i] == it.ingredient) {
 					if (it.amount >= ingredientAmount[i]) {
+						found = true;
 						continue;
 					} else {
 						Debug.Log("No enough ingredients for " + potion._name);
@@ -231,7 +232,8 @@ public class Inventory : MonoBehaviour {
 				}
 			}
 			//Debug.Log("Missing ingredient for " + potion._name);
-			//return false;
+			if (!found)
+				return false;
 		}
 		//Debug.Log("If inventory got to here somthing is probably wrong in the code!");
 		return true;
