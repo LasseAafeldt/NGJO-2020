@@ -200,4 +200,20 @@ public class Inventory : MonoBehaviour {
 		Debug.Log("If inventory got to here somthing is probably wrong in the code!");
 		return false;
 	}
+
+	public string GetAmount(string ingredient) {
+		string s;
+		Item i = get(ingredient);
+		if (i) {
+			s = i.amount.ToString();
+		} else {
+			s = "0";
+		}
+		s += "/";
+		if (!itemsToCollect.ContainsKey(ingredient)) {
+			itemsToCollect.Add(ingredient, 0);
+		}
+		s += itemsToCollect[ingredient];
+		return s;
+	}
 }
