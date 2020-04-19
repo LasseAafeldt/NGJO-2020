@@ -24,7 +24,7 @@ public class ListOfPotions : MonoBehaviour {
 	private void Awake() {
 		if (instance == null) {
 			_instance = this;
-			DontDestroyOnLoad(this);
+			//DontDestroyOnLoad(this);
 		} else {
 			Destroy(this.gameObject);
 		}
