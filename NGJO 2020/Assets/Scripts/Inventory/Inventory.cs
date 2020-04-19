@@ -211,9 +211,16 @@ public class Inventory : MonoBehaviour {
         }
 	}
 	public bool CheckIngredients(PotionScriptableObject potion) {
+        Debug.Log("Checking ingredients...");
 		List<IngredientScriptableObject> requiredIngredients = new List<IngredientScriptableObject>(potion.ingredients);
+        if(requiredIngredients == null)
+        {
+            Debug.Log("no potion has been selected");
+            return false;
+        }
 		List<int> ingredientAmount = new List<int>(potion.amountOfIngredients);
-		//List<int> ingredientAmount = new List<int>();
+        //List<int> ingredientAmount = new List<int>();
+        int checkedIngredients = 0;
 
 		for (int i = 0; i < requiredIngredients.Count; i++) {
 			//int value;
@@ -222,7 +229,9 @@ public class Inventory : MonoBehaviour {
 
 			foreach (Item it in itemList) {
 				if (requiredIngredients[i] == it.ingredient) {
+                    checkedIngredients++;
 					if (it.amount >= ingredientAmount[i]) {
+                        Debug.Log("it: " + it.amount + "  required: " + ingredientAmount[i]);
 						continue;
 					} else {
 						Debug.Log("No enough ingredients for " + potion._name);
@@ -230,12 +239,13 @@ public class Inventory : MonoBehaviour {
 					}
 				}
 			}
-			//Debug.Log("Missing ingredient for " + potion._name);
-			//return false;
+            if (!(checkedIngredients > 0))
+            {                
+			    Debug.Log("Ingredients for " + potion._name + " are missing");
+                return false; //no ingredients were checked so there were none
+            }
 		}
-		//Debug.Log("If inventory got to here somthing is probably wrong in the code!");
 		return true;
-
 	}
 
 
