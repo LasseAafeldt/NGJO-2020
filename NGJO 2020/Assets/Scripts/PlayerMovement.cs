@@ -49,7 +49,7 @@ public class PlayerMovement : MonoBehaviour {
 
 	bool facingRight = true;
 	void DesiredMove() {
-		Debug.Log("movement input: " + movementInput);
+		//Debug.Log("movement input: " + movementInput);
 		rb.MovePosition(rb.position + movementInput * moveSpeed * Time.fixedDeltaTime);
 		animator.SetFloat("X", movementInput.x);
 		animator.SetFloat("Y", movementInput.y);

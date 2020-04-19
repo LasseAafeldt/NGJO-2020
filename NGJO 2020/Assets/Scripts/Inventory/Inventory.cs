@@ -117,7 +117,7 @@ public class Inventory : MonoBehaviour {
 		SceneManager.LoadScene(1);
 	}
 
-	public string add(Item item) {
+	public void add(Item item) {
 		//if the list is full, return
 		/*
         if(itemList.Count == maxSize)
@@ -136,23 +136,12 @@ public class Inventory : MonoBehaviour {
 			itemList.Add(item);
 			item.gameObject.GetComponent<SpriteRenderer>().sprite = null;
 			item.gameObject.transform.parent = gameObject.transform;
-
-
-			refreshUI();
-
 			//g.transform.parent = transform;
 		} else {
-			it.amount += item.amount;
-			Destroy(item.gameObject);
-			foreach (GameObject i in g) {
-				Debug.Log(i.name + "  " + it.ingredient._name);
-				if (i.name == it.ingredient._name) {
-					i.GetComponent<TextMeshProUGUI>().text = it.amount + "/1";
-				}
-			}
+			it.amount += 1;
 		}
-
-		return itemList[itemList.Count - 1].ingredient._name + " was added to the inventory!";
+		refreshUI();
+		Debug.Log(item.ingredient._name + " was added to the inventory -> " + it.amount);
 
 	}
 	private void remove(string itemName) {
