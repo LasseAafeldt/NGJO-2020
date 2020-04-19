@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 using TMPro;
 /*
  Jônatas Dourado Porto
@@ -28,6 +29,8 @@ public class Inventory : MonoBehaviour {
 	public List<PotionScriptableObject> potionsToCraft;
 	public List<Item> itemList;
 	public Dictionary<string, int> itemsToCollect = new Dictionary<string, int>();
+	[Space]
+	public TMPro.TMP_Text text;
 
 	void Start() {
 		itemList = new List<Item>();
@@ -53,7 +56,9 @@ public class Inventory : MonoBehaviour {
 		refreshUI();
 	}
 
+	bool allItemsCollected;
 	public void refreshUI() {
+		allItemsCollected = true;
 		GameObject[] g = GameObject.FindGameObjectsWithTag("ReagentUI");
 		foreach (GameObject i in g) {
 			bool done = false;
@@ -73,6 +78,10 @@ public class Inventory : MonoBehaviour {
 				}
 			}
 		}
+		if (allItemsCollected) {
+			text.gameObject.SetActive(true);
+			StartCoroutine(LoadCraft());
+		}
 	}
 	void WriteAmount(GameObject i, Item item, int amount) {
 		if (!itemsToCollect.ContainsKey(item.ingredient._name)) {
@@ -83,11 +92,16 @@ public class Inventory : MonoBehaviour {
 				i.GetComponent<TextMeshProUGUI>().text = "<color=\"green\">";
 			} else {
 				i.GetComponent<TextMeshProUGUI>().text = "<color=\"red\">";
+				allItemsCollected = false;
 			}
 		} else {
 			i.GetComponent<TextMeshProUGUI>().text = "";
 		}
 		i.GetComponent<TextMeshProUGUI>().text += amount + "/" + itemsToCollect[item.ingredient._name];
+	}
+	IEnumerator LoadCraft() {
+		yield return new WaitForSeconds(2);
+		SceneManager.LoadScene("Potion UI test");
 	}
 
 	public string add(Item item) {
