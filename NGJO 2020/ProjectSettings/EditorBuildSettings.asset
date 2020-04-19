@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Start.unity
     guid: 670ba34a7c9a6744bb038332899b2c67
   - enabled: 1
+    path: Assets/Scenes/Potion UI test.unity
+    guid: 15819569be35d7a4887ec3220acbb1c4
+  - enabled: 1
     path: Assets/Scenes/Room1.unity
     guid: 633856eb5a836c745b226bfb14789602
   - enabled: 1
@@ -32,9 +35,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Room8.unity
     guid: d10d08d628828344bbec7a026193c25b
-  - enabled: 1
-    path: Assets/Scenes/Potion UI test.unity
-    guid: 15819569be35d7a4887ec3220acbb1c4
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 759effef68c11e24ba4206199a888052,
       type: 2}
