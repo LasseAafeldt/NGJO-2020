@@ -36,5 +36,5 @@ EditorBuildSettings:
     path: Assets/Scenes/Room8.unity
     guid: d10d08d628828344bbec7a026193c25b
   m_configObjects:
-    com.unity.input.settings: {fileID: 11400000, guid: 759effef68c11e24ba4206199a888052,
+    com.unity.input.settings: {fileID: 11400000, guid: 2c7afd9f1449aa548a3577d6a969698c,
       type: 2}
