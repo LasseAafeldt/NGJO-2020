@@ -308,12 +308,12 @@ MonoBehaviour:
   - {fileID: 11400000, guid: fb53867399d40e24e90be053bc13fac2, type: 2}
   - {fileID: 11400000, guid: a4700a54443bbd64f8778ebf89ea5b32, type: 2}
   itemList:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1247872441593027153, guid: 165bbdf0711425740a11e9b96907f720, type: 3}
+  - {fileID: 1247872441593027153, guid: 623d0be495f65ce4685cd522544ed112, type: 3}
+  - {fileID: 1247872441593027153, guid: 0666600ea99cee540b3505da7dec521f, type: 3}
+  - {fileID: 1247872441593027153, guid: 6239ba8d35b50184593de4409194ed4c, type: 3}
+  - {fileID: 1247872441593027153, guid: f6594adda6ef0e2489596049f1181e45, type: 3}
+  - {fileID: 1247872441593027153, guid: 03d2db47b9d051447a9429c0f5be5c48, type: 3}
+  - {fileID: 1247872441593027153, guid: 60320f0332bba094d892c0a3fdbb0d6a, type: 3}
+  - {fileID: 1247872441593027153, guid: 7d6ac864766650849a95f355358d40b3, type: 3}
   allCollectedCanvas: {fileID: 1229728048}

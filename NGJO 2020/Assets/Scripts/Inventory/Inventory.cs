@@ -27,13 +27,17 @@ public class Inventory : MonoBehaviour {
 
 	public int maxPotions = 3;
 	public List<PotionScriptableObject> potionsToCraft;
+	public int initialItemAmount = 0;
 	public List<Item> itemList;
 	public Dictionary<string, int> itemsToCollect = new Dictionary<string, int>();
 	[Space]
 	public GameObject allCollectedCanvas;
 
 	void Start() {
-		itemList = new List<Item>();
+		//itemList = new List<Item>();
+		foreach (Item i in itemList) {
+			i.amount = initialItemAmount;
+		}
 
 		foreach (PotionScriptableObject p in potionsToCraft) {
 			p.amountOfPotion = 0;
@@ -113,7 +117,7 @@ public class Inventory : MonoBehaviour {
 		SceneManager.LoadScene(1);
 	}
 
-	public string add(Item item) {
+	public void add(Item item) {
 		//if the list is full, return
 		/*
         if(itemList.Count == maxSize)
@@ -132,23 +136,12 @@ public class Inventory : MonoBehaviour {
 			itemList.Add(item);
 			item.gameObject.GetComponent<SpriteRenderer>().sprite = null;
 			item.gameObject.transform.parent = gameObject.transform;
-
-
-			refreshUI();
-
 			//g.transform.parent = transform;
 		} else {
-			it.amount += item.amount;
-			Destroy(item.gameObject);
-			foreach (GameObject i in g) {
-				Debug.Log(i.name + "  " + it.ingredient._name);
-				if (i.name == it.ingredient._name) {
-					i.GetComponent<TextMeshProUGUI>().text = it.amount + "/1";
-				}
-			}
+			it.amount += 1;
 		}
-
-		return itemList[itemList.Count - 1].ingredient._name + " was added to the inventory!";
+		refreshUI();
+		Debug.Log(item.ingredient._name + " was added to the inventory -> " + it.amount);
 
 	}
 	private void remove(string itemName) {
@@ -192,23 +185,18 @@ public class Inventory : MonoBehaviour {
 	}
 
 	public void RemoveIngredient(IngredientScriptableObject ingredient) {
-        List<Item> it = itemList;
-        for (int i = itemList.Count - 1; i >= 0; i--)
-        {
-            if (ingredient == it[i].ingredient)
-            {
-                Debug.Log(it[i].ingredient._name + "was removed from inventory!");
-                if (it[i].amount <= 1)
-                {
-                    itemList.Remove(it[i]);
-                    //Destroy(i.gameObject);
-                }
-                else
-                {
-                    it[i].amount--;
-                }
-            }
-        }
+		List<Item> it = itemList;
+		for (int i = itemList.Count - 1; i >= 0; i--) {
+			if (ingredient == it[i].ingredient) {
+				Debug.Log(it[i].ingredient._name + "was removed from inventory!");
+				if (it[i].amount <= 1) {
+					itemList.Remove(it[i]);
+					//Destroy(i.gameObject);
+				} else {
+					it[i].amount--;
+				}
+			}
+		}
 	}
 	public bool CheckIngredients(PotionScriptableObject potion) {
         Debug.Log("Checking ingredients...");
@@ -227,11 +215,13 @@ public class Inventory : MonoBehaviour {
 			//ingredientAmount.Add(itemsToCollect.(requiredIngredients[i]._name));
 			//Debug.Log("amount ingredient required: " + ingredientAmount[i] + " of " + requiredIngredients[i].name);
 
+			bool found = false;
 			foreach (Item it in itemList) {
 				if (requiredIngredients[i] == it.ingredient) {
                     checkedIngredients++;
 					if (it.amount >= ingredientAmount[i]) {
                         Debug.Log("it: " + it.amount + "  required: " + ingredientAmount[i]);
+						found = true;
 						continue;
 					} else {
 						Debug.Log("No enough ingredients for " + potion._name);
@@ -244,6 +234,9 @@ public class Inventory : MonoBehaviour {
 			    Debug.Log("Ingredients for " + potion._name + " are missing");
                 return false; //no ingredients were checked so there were none
             }
+			//Debug.Log("Missing ingredient for " + potion._name);
+			if (!found)
+				return false;
 		}
 		return true;
 	}
