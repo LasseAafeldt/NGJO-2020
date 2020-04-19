@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class PlayerMovement : MonoBehaviour {
 	[SerializeField] private float moveSpeed = 2f;
 	[SerializeField] private Rigidbody2D rb;
+	public AudioSource enemyAttack;
 	[Space]
 	public Vector3 killCamPosition;
 	public float killCamMaxMove = 0.1f;
@@ -74,6 +75,7 @@ public class PlayerMovement : MonoBehaviour {
 	}
 	IEnumerator RespawnCoroutine() {
 		if (!respawn) {
+			enemyAttack.Play();
 			respawn = true;
 			animator.SetBool("Respawn", true);
 			yield return new WaitForSeconds(killCamDuration);

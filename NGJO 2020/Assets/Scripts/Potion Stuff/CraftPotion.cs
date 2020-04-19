@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class CraftPotion : MonoBehaviour {
 	public GameObject allPotionsCrafted;
+	public AudioClip allDone;
 
 	public void MakePotion() {
 		PotionScriptableObject potionToCraft = ListOfPotions.instance.GetPotionToCraft();
-		if (potionToCraft.amountOfPotion <= 0) {
+		if (!potionToCraft || potionToCraft.amountOfPotion <= 0) {
 			Debug.Log("Already crafted");
 			return;
 		}
@@ -32,12 +33,21 @@ public class CraftPotion : MonoBehaviour {
 		potionToCraft.amountOfPotion--;
 		Debug.Log("I crafted a potion");
 		ListOfPotions.instance.SetPotionToCraft(potionToCraft);
+		GetComponent<AudioSource>().Play();
 
 		foreach (PotionScriptableObject p in Inventory.instance.potionsToCraft) {
 			if (p.amountOfPotion > 0) {
 				return;
 			}
 		}
+		StartCoroutine(AllDone());
+	}
+
+	IEnumerator AllDone() {
+		AudioSource audioSource = GetComponent<AudioSource>();
+		yield return new WaitForSeconds(audioSource.clip.length);
+		audioSource.clip = allDone;
+		audioSource.Play();
 		allPotionsCrafted.SetActive(true);
 	}
 }
