@@ -12,9 +12,6 @@ public class AudioManager : MonoBehaviour {
 			Destroy(gameObject);
 		}
 		DontDestroyOnLoad(gameObject);
-	}
-
-	void Start() {
 		backgroundSource = GetComponent<AudioSource>();
 	}
 

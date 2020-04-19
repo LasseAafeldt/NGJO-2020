@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 using TMPro;
 /*
  Jônatas Dourado Porto
@@ -28,6 +29,8 @@ public class Inventory : MonoBehaviour {
 	public List<PotionScriptableObject> potionsToCraft;
 	public List<Item> itemList;
 	public Dictionary<string, int> itemsToCollect = new Dictionary<string, int>();
+	[Space]
+	public GameObject allCollectedCanvas;
 
 	void Start() {
 		itemList = new List<Item>();
@@ -35,26 +38,37 @@ public class Inventory : MonoBehaviour {
 		foreach (PotionScriptableObject p in potionsToCraft) {
 			p.amountOfPotion = 0;
 		}
-		foreach (PotionScriptableObject p in potionsToCraft) {
-			p.amountOfPotion = Random.Range(0, 3);
-			foreach (IngredientScriptableObject i in p.ingredients) {
-				if (!itemsToCollect.ContainsKey(i._name)) {
-					itemsToCollect.Add(i._name, 1);
-				} else {
-					itemsToCollect[i._name]++;
+		while (maxPotions > 0) {
+			foreach (PotionScriptableObject p in potionsToCraft) {
+				if (p.amountOfPotion == 0) {
+					p.amountOfPotion = Random.Range(0, 2);
+					if (p.amountOfPotion > 0) {
+						foreach (IngredientScriptableObject i in p.ingredients) {
+							if (!itemsToCollect.ContainsKey(i._name)) {
+								itemsToCollect.Add(i._name, 1);
+							} else {
+								itemsToCollect[i._name]++;
+							}
+						}
+						maxPotions -= p.amountOfPotion;
+						if (maxPotions <= 0) {
+							break;
+						}
+					}
 				}
-			}
-			maxPotions -= p.amountOfPotion;
-			if (maxPotions <= 0) {
-				break;
 			}
 		}
 
 		refreshUI();
 	}
 
+	bool allItemsCollected;
 	public void refreshUI() {
+		allItemsCollected = true;
 		GameObject[] g = GameObject.FindGameObjectsWithTag("ReagentUI");
+		if (g.Length == 0) {
+			return;
+		}
 		foreach (GameObject i in g) {
 			bool done = false;
 			foreach (Item item in itemList) {
@@ -73,6 +87,10 @@ public class Inventory : MonoBehaviour {
 				}
 			}
 		}
+		if (allItemsCollected) {
+			allCollectedCanvas.SetActive(true);
+			StartCoroutine(LoadCraft());
+		}
 	}
 	void WriteAmount(GameObject i, Item item, int amount) {
 		if (!itemsToCollect.ContainsKey(item.ingredient._name)) {
@@ -83,11 +101,16 @@ public class Inventory : MonoBehaviour {
 				i.GetComponent<TextMeshProUGUI>().text = "<color=\"green\">";
 			} else {
 				i.GetComponent<TextMeshProUGUI>().text = "<color=\"red\">";
+				allItemsCollected = false;
 			}
 		} else {
 			i.GetComponent<TextMeshProUGUI>().text = "";
 		}
 		i.GetComponent<TextMeshProUGUI>().text += amount + "/" + itemsToCollect[item.ingredient._name];
+	}
+	IEnumerator LoadCraft() {
+		yield return new WaitForSeconds(2);
+		SceneManager.LoadScene("Potion UI test");
 	}
 
 	public string add(Item item) {
