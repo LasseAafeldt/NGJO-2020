@@ -17,7 +17,7 @@ public class CraftPotion : MonoBehaviour
         //if have enough ingredient, enable craft
         if (!inventory.CheckIngredients(potionToCraft))
         {
-            Debug.Log("I don't have enough ingredients");
+            //Debug.Log("I don't have enough ingredients");
             return;
         }
         //take away ingredients
